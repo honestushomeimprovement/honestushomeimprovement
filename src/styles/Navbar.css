@@ -1,0 +1,13 @@
+.custom-nav > *{
+    margin-right: 5px;
+        color: white;
+}
+
+.big-logo{
+    font-size: 60px;
+    color: #0a58ca
+}
+
+.custom-key{
+    color:#0a58ca
+}
