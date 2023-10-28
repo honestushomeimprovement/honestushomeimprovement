@@ -1,0 +1,261 @@
+:root{
+    --darkBlue: rgb(44, 85, 98);
+    --marginBlue: rgb(16, 167, 162);
+    --borderBlue: rgb(9, 110, 141);
+}
+
+main{
+    background-color: aliceblue;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.grid-container{   /* Setting up grid for each section */
+    display: grid;
+    grid-template-columns: 100%;
+    grid-auto-rows: minmax(300px, auto);
+    grid-gap: 30px;
+    grid-template-areas:
+    "about"
+    "projects"
+    "contacts";
+}
+
+.about-container{ /* Container for about section */
+    grid-area: about;
+    padding: 1rem;
+    border: 1px solid #dfdfdf;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    display: flex;
+    flex-direction: column;
+}
+
+.projects-container{ /* Container for projects section */
+    grid-area: projects;
+    padding: 1rem;
+    border: 1px solid #dfdfdf;
+    box-shadow: 3px 3px 5px 6px #ccc;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-container{  /* Container for contact section */
+    grid-area: contacts;
+    padding: 1rem;
+    border: 1px solid #dfdfdf;
+    box-shadow: 3px 3px 5px 6px #ccc;
+}
+
+.standard-container{ /* The standard orientation of the container has rounded corners on the left hand of the page*/
+    margin-left: 20px;
+    border-radius: 50px 0px 0px 50px;
+    border-right: 0px;
+}
+
+.flip-container{ /* Flipped orientation has rounded corners on the right*/
+    margin-right: 20px;
+    border-radius: 0px 50px 50px 0px; 
+    border-left: 0px;
+}
+
+
+h3{ /* h3 tags are for setting styles and border for all subheadings in each container */
+    font-size: 48px;
+    padding: 10px;
+    border-bottom: 1px solid var(--borderBlue);
+    color: var(--marginBlue);
+}
+
+.header-content{ /* Formats each subheader to look the same */
+    flex-direction: row;
+    flex: 1;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.flipped-header{ /* flips the subheader text for alternating containers */
+    text-align: end;
+}
+
+.writing-format{ /* Any paragraphs used in multiple sections is formatted with this code */
+    margin-top: 30px;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    color: var(--borderBlue);
+    padding-right: 10px;
+    border-right: 1px solid var(--borderBlue);
+    padding-left: 10px;
+    border-left: 1px solid var(--borderBlue);
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+    /* About section starts here */
+.about-content{
+    flex: 1;
+    display: flex;
+}
+
+.about-content img{
+    margin: 15px ;
+    margin-top: 15px;
+    display: flex;
+    align-self: center;
+}
+
+.about-content p{
+    align-self: center;
+    order: 3;
+}
+
+    /* Project content starts here */
+.projects-content{
+    display: flex;
+    flex-direction: row;
+    margin: 30px;
+    margin-right: 70px;
+    position: relative;
+}
+    /* Section below formats the writing in the project section */
+.projects-info{
+    display: block;
+    flex-wrap: wrap;
+    flex: 2;
+    position: relative;
+    top: 100px
+}
+
+span{ /* The first sentence of the projects info section is in bold */
+    font-weight: bold;
+}
+
+.projects-list{ /* Formats the list below the projects info */
+    margin-top: 0px;
+    padding-top: 10px;
+    list-style-type: circle;
+    padding-left: 50px;
+}
+
+.projects-list li{
+    padding-top: 10px;
+}
+    /* Section below formats the project pictures in the project section */
+.projects-pics{
+    display: flex;
+    flex-wrap: wrap;
+    flex: 5;
+}
+
+.first-child{ /* Makes the first child photo larger than all the others */
+    display: flex;
+    flex: 2;
+    flex-basis: 100%;
+    margin: 5px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.first-child:hover{
+    transition: all 0.5s ease-in-out;
+    filter: opacity(70%);
+}
+
+.other-child{ /* Responsible for sizing all the other childs */
+    display: flex;
+    flex: 1;
+    flex-basis: 40%;
+    margin: 5px;
+    position: relative;
+    border-radius: 10px;
+}
+
+.other-child:hover{
+    transition: all 0.5s ease-in-out;
+    filter: opacity(70%);
+}
+
+.centered-project-tag {  /* Text tag centered in the project to provide the projects name */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--marginBlue);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.bottom-left-project-tag { /* Text tag positioned on the bottom left corner of the picture to tell what technologies were used */
+    position: absolute;
+    bottom: 10px;
+    left: 16px;
+    background-color: var(--marginBlue);
+    border-radius: 5px;
+}
+
+    /* Contact section starts here */
+
+
+@media screen and (max-width: 922px) {
+    nav { /* Flex's nav to column*/
+      flex-direction: column;
+      align-items: center;
+    }
+    .other-child{ /* Makes all project pictures same size */
+        flex-basis: 100%;
+    }
+    .contact-socials{ /* Flex's contact section socials to column */
+        flex-direction: column;
+        gap: 10px;
+    }
+  }
+
+@media  screen and (max-width: 298px) {
+    #header-socials{ /* Flex's header socials */
+        flex-direction: column;
+    }
+
+}
+
+@media  screen and (max-width: 540px) { /* Centers the entire nav bar and logo */
+    h1 {
+        justify-content: center;
+    }
+    nav ul{
+        justify-content: center;
+    }
+    .projects-pics{
+        width: 270px;
+    }
+    .first-child{
+        flex: 1;
+        flex-basis: 50%;
+        width: 270px;
+    }
+    .other-child{
+        flex-basis: 50%;
+    }
+}
+@media screen and (max-width: 1104px) { /* Stops the about section from getting too small  */
+    .about-content {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 695px) { /* Stops the projects content from squishing together */
+    .projects-content{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .projects-info{
+        display: flex;
+        flex-direction: row;
+        flex: 1;
+        flex-basis: 100%;
+        margin-top: -70px;
+    }
+    .projects-pics{
+        flex-direction: row;
+        margin-top: 80px;
+    }
+}

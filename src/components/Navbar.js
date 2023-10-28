@@ -3,7 +3,7 @@ import "../styles/Navbar.css";
 
 function Navbar({ currentPage, handlePageChange }) {
   return (
-    <nav className="navbar navbar-expand-lg bg-dark fs-5 custom">
+    <nav className="navbar navbar-expand-lg bg-dark fs-5 custom-underline">
       <div className="container-fluid justify-content-center">
         <div className="">
           <button
@@ -26,10 +26,10 @@ function Navbar({ currentPage, handlePageChange }) {
           <ul className="navbar-nav custom-nav m-3 justify-content-around">
             <li className="nav-item mt-1">
               <a
-                href="#about"
-                onClick={() => handlePageChange("About")}
+                href="#home"
+                onClick={() => handlePageChange("Home")}
                 className={
-                  currentPage === "About"
+                  currentPage === "Home"
                     ? "nav-link active btn btn-warning text-reset"
                     : "nav-link btn btn-outline-warning custom-button text-reset"
                 }
@@ -52,10 +52,10 @@ function Navbar({ currentPage, handlePageChange }) {
             </li>
             <li className="nav-item mt-1">
               <a
-                href="#contact"
-                onClick={() => handlePageChange("Contact")}
+                href="#Projects"
+                onClick={() => handlePageChange("Projects")}
                 className={
-                  currentPage === "Contact"
+                  currentPage === "Projects"
                     ? "nav-link active btn btn-warning text-reset"
                     : "nav-link btn btn-outline-warning custom-button text-reset"
                 }
