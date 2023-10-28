@@ -1,5 +1,6 @@
 .custom-nav > *{
-    margin-right: 5px;
+    margin-right: 50px;
+    margin-left: 50px;
         color: white;
 }
 
@@ -10,4 +11,13 @@
 
 .custom-key{
     color:#0a58ca
+}
+
+.custom-button{
+    color: #FFFFFF;
+    border: 1px solid white;
+}
+
+#nav-toggler{
+    background-color: #ffcd39;
 }

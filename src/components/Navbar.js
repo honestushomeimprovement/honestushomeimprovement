@@ -3,10 +3,11 @@ import "../styles/Navbar.css";
 
 function Navbar({ currentPage, handlePageChange }) {
   return (
-    <nav className="navbar navbar-expand-lg bg-info fs-5">
+    <nav className="navbar navbar-expand-lg bg-dark fs-5 custom">
       <div className="container-fluid justify-content-center">
-        <div className="d-flex">
+        <div className="">
           <button
+            id="nav-toggler"
             className="navbar-toggler mx-4"
             type="button"
             data-bs-toggle="collapse"
@@ -19,21 +20,21 @@ function Navbar({ currentPage, handlePageChange }) {
           </button>
         </div>
         <div
-          className="collapse navbar-collapse justify-content-end"
+          className="collapse navbar-collapse justify-content-center"
           id="navbarNav"
         >
-          <ul className="navbar-nav custom-nav m-3">
+          <ul className="navbar-nav custom-nav m-3 justify-content-around">
             <li className="nav-item mt-1">
               <a
                 href="#about"
                 onClick={() => handlePageChange("About")}
                 className={
                   currentPage === "About"
-                    ? "nav-link active btn btn-primary text-reset"
-                    : "nav-link btn btn-outline-primary"
+                    ? "nav-link active btn btn-warning text-reset"
+                    : "nav-link btn btn-outline-warning custom-button text-reset"
                 }
               >
-                About
+                Home
               </a>
             </li>
             <li className="nav-item mt-1">
@@ -42,11 +43,11 @@ function Navbar({ currentPage, handlePageChange }) {
                 onClick={() => handlePageChange("Portfolio")}
                 className={
                   currentPage === "Portfolio"
-                    ? "nav-link active btn btn-primary text-reset"
-                    : "nav-link btn btn-outline-primary"
+                    ? "nav-link active btn btn-warning text-reset"
+                    : "nav-link btn btn-outline-warning custom-button text-reset"
                 }
               >
-                Portfolio
+                Services
               </a>
             </li>
             <li className="nav-item mt-1">
@@ -55,11 +56,11 @@ function Navbar({ currentPage, handlePageChange }) {
                 onClick={() => handlePageChange("Contact")}
                 className={
                   currentPage === "Contact"
-                    ? "nav-link active btn btn-primary text-reset"
-                    : "nav-link btn btn-outline-primary"
+                    ? "nav-link active btn btn-warning text-reset"
+                    : "nav-link btn btn-outline-warning custom-button text-reset"
                 }
               >
-                Contact
+                Projects
               </a>
             </li>
             <li className="nav-item mt-1">
@@ -68,11 +69,11 @@ function Navbar({ currentPage, handlePageChange }) {
                 onClick={() => handlePageChange("Resume")}
                 className={
                   currentPage === "Resume"
-                    ? "nav-link active btn btn-primary text-reset"
-                    : "nav-link btn btn-outline-primary"
+                    ? "nav-link active btn btn-warning text-reset"
+                    : "nav-link btn btn-outline-warning custom-button text-reset"
                 }
               >
-                Resume
+                Reviews
               </a>
             </li>
           </ul>
