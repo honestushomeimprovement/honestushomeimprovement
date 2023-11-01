@@ -2,6 +2,9 @@ import React from "react";
 import "../../styles/Home.css";
 
 export default function Home() {
+    setTimeout(function () {
+      window.scrollTo(0, 500);
+    }, 100);
   return (
     <div className="home-main">
       <h1 className="text-center p-3 home-head">Honestus</h1>

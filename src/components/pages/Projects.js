@@ -2,6 +2,9 @@ import React from "react";
 import "../../styles/Projects.css";
 
 export default function Projects() {
+    setTimeout(function () {
+      window.scrollTo(0, 500);
+    }, 100);
   return (
     <>
       <h1 className="text-center p-3 home-head">Projects</h1>

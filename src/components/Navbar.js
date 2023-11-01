@@ -5,7 +5,7 @@ function Navbar({ currentPage, handlePageChange }) {
   return (
     <nav className="navbar navbar-expand-lg bg-dark fs-5 custom-underline">
       <div className="container-fluid justify-content-center">
-        <div className="">
+        <div className="toggle-btn">
           <button
             id="nav-toggler"
             className="navbar-toggler mx-4"
@@ -40,9 +40,9 @@ function Navbar({ currentPage, handlePageChange }) {
             <li className="nav-item mt-1">
               <a
                 href="#portfolio"
-                onClick={() => handlePageChange("Portfolio")}
+                onClick={() => handlePageChange("Services")}
                 className={
-                  currentPage === "Portfolio"
+                  currentPage === "Services"
                     ? "nav-link active btn btn-warning text-reset"
                     : "nav-link btn btn-outline-warning custom-button text-reset"
                 }
@@ -65,15 +65,28 @@ function Navbar({ currentPage, handlePageChange }) {
             </li>
             <li className="nav-item mt-1">
               <a
-                href="#resume"
-                onClick={() => handlePageChange("Resume")}
+                href="#reviews"
+                onClick={() => handlePageChange("Reviews")}
                 className={
-                  currentPage === "Resume"
+                  currentPage === "Reviews"
                     ? "nav-link active btn btn-warning text-reset"
                     : "nav-link btn btn-outline-warning custom-button text-reset"
                 }
               >
                 Reviews
+              </a>
+            </li>
+            <li className="nav-item mt-1">
+              <a
+                href="#contact"
+                onClick={() => handlePageChange("Contact")}
+                className={
+                  currentPage === "Contact"
+                    ? "nav-link active btn btn-warning text-reset"
+                    : "nav-link btn btn-outline-warning custom-button text-reset"
+                }
+              >
+                Contact
               </a>
             </li>
           </ul>
