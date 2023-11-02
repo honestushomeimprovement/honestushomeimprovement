@@ -14,7 +14,7 @@ main{
     display: grid;
     grid-template-columns: 100%;
     grid-auto-rows: minmax(300px, auto);
-    grid-gap: 30px;
+    grid-gap: 60px;
     grid-template-areas:
     "about"
     "projects";
@@ -49,6 +49,14 @@ main{
     margin-right: 20px;
     border-radius: 0px 50px 50px 0px; 
     border-left: 0px;
+}
+
+.flipped-about{
+    align-self: end;
+}
+
+.picture{
+    align-self: center;
 }
 
 
