@@ -60,15 +60,6 @@
   -webkit-transform: translateY(170px);
 }
 
-.git-link{
-  text-decoration: none;
-  color: #caf0f8;
-}
-
-.git-link:hover{
-  color: #0dcaf0;
-  text-shadow: 0 5px 15px #0dcaf0;
-}
 
 @media screen and (max-width: 500px){
     .content{

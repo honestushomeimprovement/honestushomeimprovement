@@ -9,11 +9,11 @@ export default function Home() {
     <div className="home-main">
       <h1 className="text-center p-3 home-head">Honestus</h1>
       <div className="d-flex home-container">
-        <div className="headshot flex-fill d-flex justify-content-center mt-3 animate__animated animate__backInLeft">
+        <div className="headshot flex-fill d-flex justify-content-center mt-3">
           Reno Pic Here
         </div>
         <div className="d-flex flex-column justify-content-around ">
-          <div className="home-info d-flex flex-wrap justify-content-center mt-3 animate__animated animate__backInDown">
+          <div className="home-info d-flex flex-wrap justify-content-center mt-3">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry's standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
@@ -24,7 +24,7 @@ export default function Home() {
             and more recently with desktop publishing software like Aldus
             PageMaker including versions of Lorem Ipsum.
           </div>
-          <div className="d-flex justify-content-between techs mt-5 animate__animated animate__backInRight">
+          <div className="d-flex justify-content-between techs mt-5">
             <div className="mx-2">
               <h3> We Do: </h3>
               <ul className="">

@@ -1,69 +1,72 @@
-import React from "react";
-import "../../styles/Services.css"
-import pic from "../../assets/images/picholder.jpg"
-
-
-const projects = [
-  {
-    id: 1,
-    name: "Service",
-    github: "https://github.com/keysbhag/FindFlix-Project",
-    url: "https://google.com",
-    stack: "stuff",
-    class: "animate__animated animate__backInLeft project",
-  },
-  {
-    id: 2,
-    name: "Service",
-    github: "https://github.com/keysbhag/Food-City-Grocery",
-    url: "https://google.com",
-    stack: "Stuff",
-    class: "animate__animated animate__backInRight project",
-  },
-  {
-    id: 3,
-    name: "Service",
-    github: "https://github.com/keysbhag/6ixAuto",
-    url: "https://google.com",
-    stack: "Stuff",
-    class: "animate__animated animate__backInLeft project",
-  },
-  {
-    id: 5,
-    name: "Servcie",
-    github: "https://github.com/keysbhag/Weather-Application",
-    url: "https://google.com",
-    stack: "Stuff",
-    class: "animate__animated animate__backInLeft project",
-  },
-];
+import React, { useState } from "react";
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
+import "../../styles/Services.css";
+import pic from "../../assets/images/picholder.jpg";
+import services from "../../assets/ServiceInfo";
 
 function Services() {
-    setTimeout(function () {
-      window.scrollTo(0, 500);
-    }, 100);
+  setTimeout(function () {
+    window.scrollTo(0, 500);
+  }, 100);
+
+  const [show, setShow] = useState(false);
+
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   return (
     <>
       <h1 className="text-center p-3 home-head">Services</h1>
       <div className="top-margin d-flex align-items-center justify-content-around flex-wrap">
-        {projects.map((project) => (
-          <div className="d-flex flex-column">
-            <div className={project.class} key={project.id}>
-              <a href={project.url} target="blank" className="example border">
+        {services.map((service) => (
+          <div className="d-flex flex-column justify-content-center">
+            <div className={service.class} key={service.id}>
+              <div onClick={handleShow} className="example border">
                 <img
                   src={pic}
-                  alt={project.name}
+                  alt={service.name}
                   width="450"
                   height="400"
                 ></img>
                 <div class="content">
                   <h2 className="text">
                     {" "}
-                    {project.name} <p className="descr"> {project.stack}</p>{" "}
+                    {service.name}{" "}
+                    <p className="descr"> {service.description}</p>{" "}
                   </h2>
                 </div>
-              </a>
+              </div>
             </div>
+            {/* Modal Code Here */}
+            <>
+              <Modal
+                show={show}
+                onHide={handleClose}
+                backdrop="static"
+                keyboard={false}
+              >
+                <Modal.Header closeButton>
+                  <Modal.Title>{service.name}</Modal.Title>
+                </Modal.Header>
+                <Modal.Body>
+                  <div>
+                    <img
+                      src={service.src}
+                      alt={service.name}
+                      width="450"
+                      height="400"
+                    ></img>
+                  </div>
+                  {service.info}
+                </Modal.Body>
+                <Modal.Footer>
+                  <Button variant="secondary" onClick={handleClose}>
+                    Close
+                  </Button>
+                  <Button variant="primary">Contact Us</Button>
+                </Modal.Footer>
+              </Modal>
+            </>
           </div>
         ))}
       </div>
