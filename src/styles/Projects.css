@@ -20,16 +20,8 @@ main{
     "projects";
 }
 
-.about-container{ /* Container for about section */
-    grid-area: about;
-    padding: 1rem;
-    border: 1px solid #b1822d;
-    box-shadow: 3px 3px 5px 6px #000000;
-    display: flex;
-    flex-direction: column;
-}
 
-.projects-container{ /* Container for projects section */
+.project-container{ /* Container for projects section */
     grid-area: projects;
     padding: 1rem;
     border: 1px solid #b1822d;
@@ -57,6 +49,15 @@ main{
 
 .picture{
     align-self: center;
+    max-width: 550px;
+    max-height: 550px;
+}
+
+.modal-picture{
+  display: block;
+  width: 100%;
+  max-height: 100%
+
 }
 
 
@@ -94,7 +95,6 @@ h3{ /* h3 tags are for setting styles and border for all subheadings in each con
 
     /* About section starts here */
 .about-content{
-    flex: 1;
     display: flex;
 }
 
@@ -107,7 +107,6 @@ h3{ /* h3 tags are for setting styles and border for all subheadings in each con
 
 .about-content p{
     align-self: center;
-    order: 3;
 }
 
     /* Project content starts here */
@@ -127,72 +126,6 @@ h3{ /* h3 tags are for setting styles and border for all subheadings in each con
     top: 100px
 }
 
-span{ /* The first sentence of the projects info section is in bold */
-    font-weight: bold;
-}
-
-.projects-list{ /* Formats the list below the projects info */
-    margin-top: 0px;
-    padding-top: 10px;
-    list-style-type: circle;
-    padding-left: 50px;
-}
-
-.projects-list li{
-    padding-top: 10px;
-}
-    /* Section below formats the project pictures in the project section */
-.projects-pics{
-    display: flex;
-    flex-wrap: wrap;
-    flex: 5;
-}
-
-.first-child{ /* Makes the first child photo larger than all the others */
-    display: flex;
-    flex: 2;
-    flex-basis: 100%;
-    margin: 5px;
-    position: relative;
-    border-radius: 10px;
-}
-
-.first-child:hover{
-    transition: all 0.5s ease-in-out;
-    filter: opacity(70%);
-}
-
-.other-child{ /* Responsible for sizing all the other childs */
-    display: flex;
-    flex: 1;
-    flex-basis: 40%;
-    margin: 5px;
-    position: relative;
-    border-radius: 10px;
-}
-
-.other-child:hover{
-    transition: all 0.5s ease-in-out;
-    filter: opacity(70%);
-}
-
-.centered-project-tag {  /* Text tag centered in the project to provide the projects name */
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: var(--marginBlue);
-    padding: 10px;
-    border-radius: 10px;
-}
-
-.bottom-left-project-tag { /* Text tag positioned on the bottom left corner of the picture to tell what technologies were used */
-    position: absolute;
-    bottom: 10px;
-    left: 16px;
-    background-color: var(--marginBlue);
-    border-radius: 5px;
-}
 
     /* Contact section starts here */
 

@@ -22,7 +22,7 @@ function ModalService({service}){
           </h4>
           <div className={service.class} key={service.id}>
             <div className="example">
-              <img src={pic} alt={service.name} width="450" height="400"></img>
+              <img src={pic} alt={service.name} className="img-fluid service-pic"></img>
               <div className="content">
                 <p className="text descr">
                   Click Here For More Information About Our {service.name}{" "}
@@ -39,7 +39,7 @@ function ModalService({service}){
           backdrop="static"
           keyboard={false}
         >
-          <Modal.Header closeButton >
+          <Modal.Header closeButton>
             <Modal.Title>{service.name}</Modal.Title>
           </Modal.Header>
           <Modal.Body className="modal-background">

@@ -19,26 +19,28 @@ export default function Projects() {
               <div>
                 <div
                   key={project.id}
-                  className="about-container standard-container animate__slideInRight animate__animated"
+                  className="project-container standard-container animate__slideInRight animate__animated"
                   id=""
                 >
                   <div className="header-content">
                     <h3> {project.name} </h3>
                   </div>
-                  <img
-                    className="picture"
-                    src={project.images[0]}
-                    alt="project 1"
-                    width="450"
-                    height="400"
-                  ></img>
-                  <div className="about-content">
+                  <div className="picture p-4">
+                    <img
+                      src={project.images[0]}
+                      alt="project 1"
+                      className="img-fluid"
+                    ></img>
+                  </div>
+                  <div className="about-content p-2">
                     <p className="writing-format">
                       Location: {project.location}{" "}
                     </p>
                   </div>
                   {/* Modal Start */}
-                  <ModalCarousel projectImages={project.images} />
+                  <div className="align-self-center">
+                    <ModalCarousel projectImages={project.images} />
+                  </div>
                   {/* Modal End */}
                 </div>
               </div>
@@ -47,26 +49,28 @@ export default function Projects() {
               <div>
                 <div
                   key={project.id}
-                  className="projects-container flip-container animate__slideInLeft animate__animated"
+                  className="project-container flip-container animate__slideInLeft animate__animated"
                   id=""
                 >
                   <div className="header-content flipped-header">
                     <h3> {project.name} </h3>
                   </div>
-                  <img
-                    className="picture"
-                    src={pic}
-                    alt="project 2"
-                    width="450"
-                    height="400"
-                  ></img>
+                  <div className="picture p-4">
+                    <img
+                      src={project.images[0]}
+                      alt="project 1"
+                      className="img-fluid "
+                    ></img>
+                  </div>
                   <div className="about-content flipped-about">
                     <p className="writing-format">
                       Location: {project.location}{" "}
                     </p>
                   </div>
                   {/* Modal Start */}
-                  <ModalCarousel projectImages={project.images} />
+                  <div className="align-self-center p-3">
+                    <ModalCarousel projectImages={project.images} />
+                  </div>
                   {/* Modal End */}
                 </div>
               </div>

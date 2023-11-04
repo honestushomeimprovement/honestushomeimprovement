@@ -20,6 +20,7 @@ function ModalCarousel({projectImages}) {
         onHide={handleClose}
         backdrop="static"
         keyboard={false}
+        size="lg"
       >
         <Modal.Header closeButton>
           <Modal.Title>Modal title</Modal.Title>
@@ -32,14 +33,11 @@ function ModalCarousel({projectImages}) {
               key={index}
               >
                 <img
-                  className="picture"
+                  className="modal-picture"
                   src={image}
                   alt="project 1"
-                  width="450"
-                  height="400"
                 ></img>
                 <Carousel.Caption>
-                  <h3>  </h3>
                 </Carousel.Caption>
               </Carousel.Item>
             ))}
