@@ -101,7 +101,7 @@ function Contact() {
           <a
             className="email-link"
             target="_blank"
-            href="mailto:keyshawn.11@hotmail.com"
+            href="mailto:google@gmail.com"
           >
             {" "}
             Joey@example.com{" "}

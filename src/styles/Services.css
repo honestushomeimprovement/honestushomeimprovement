@@ -1,5 +1,5 @@
 .project {
-    margin-top: 30px;
+    margin-top: 10px;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -16,8 +16,34 @@
     justify-content: center;
 }
 
+.service-head{
+  font-size: 30px;
+}
+
+.service-description-body{
+  color: #FFFFFF;
+  padding-top: 10px;
+  border-top: 1px solid #b1822d;
+  margin-top: 10px;
+}
+
+.modal-background{
+  background-color: #6c757d;
+}
+
+.modal-head-foot{
+  background-color: #495057;
+}
+
+.img-responsive {
+  display: block;
+  width: auto;
+  max-height: 100%
+}
+
 .descr{
-    font-size: 16px;
+    font-size: 22px;
+    padding: 20px;
 }
 .example {
   position: relative;
@@ -26,6 +52,7 @@
   display: block;
   cursor: pointer;
   overflow: hidden;
+  box-shadow: 5px 5px 5px black;
 }
 .content {
   opacity: 0;
@@ -33,7 +60,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  color: #FFFFFF;
+  color: #000000;
   background-color: rgba(200, 200, 200, 0.5);
   width: 451px;
   height: 450px;
@@ -46,8 +73,12 @@
 }
 .example .content:hover {
   opacity: 2;
-  /* background: rgba(13, 202, 240, 0.5) */
 }
+
+.example:hover {
+    box-shadow: none;
+}
+
 .example .content .text {
   height: 0;
   opacity: 2;

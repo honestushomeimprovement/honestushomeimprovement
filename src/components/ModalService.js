@@ -14,17 +14,20 @@ function ModalService({service}){
       <>
         <div
           key={service.id}
-          className="d-flex flex-column justify-content-center"
+          className="d-flex flex-column justify-content-center mt-4"
           onClick={handleShow1}
         >
+          <h4 className="text-center service-head animate__animated animate__fadeInUp">
+            {service.name}
+          </h4>
           <div className={service.class} key={service.id}>
-            <div className="example border">
+            <div className="example">
               <img src={pic} alt={service.name} width="450" height="400"></img>
               <div className="content">
-                <h2 className="text">
-                  {" "}
-                  {service.name} <p className="descr"> {service.description}</p>{" "}
-                </h2>
+                <p className="text descr">
+                  Click Here For More Information About Our {service.name}{" "}
+                  Service
+                </p>
               </div>
             </div>
           </div>
@@ -36,25 +39,25 @@ function ModalService({service}){
           backdrop="static"
           keyboard={false}
         >
-          <Modal.Header closeButton>
+          <Modal.Header closeButton >
             <Modal.Title>{service.name}</Modal.Title>
           </Modal.Header>
-          <Modal.Body>
+          <Modal.Body className="modal-background">
             <div>
               <img
                 src={service.src}
                 alt={service.name}
-                width="450"
-                height="400"
+                className="img-fluid"
               ></img>
             </div>
-            {service.info}
+
+            <p className="service-description-body">{service.info}</p>
           </Modal.Body>
           <Modal.Footer>
-            <Button variant="secondary" onClick={handleClose1}>
+            <Button variant="light" onClick={handleClose1}>
               Close
             </Button>
-            <Button variant="primary">Contact Us</Button>
+            <Button variant="warning">Contact Us</Button>
           </Modal.Footer>
         </Modal>
       </>

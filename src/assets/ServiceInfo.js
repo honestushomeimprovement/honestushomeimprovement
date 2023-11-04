@@ -1,4 +1,4 @@
-import crest from "../assets/images/Crest.png";
+import crest from "../assets/images/picholder.jpg";
 
 const services = [
   {
@@ -7,7 +7,7 @@ const services = [
     src: crest,
     description: "painting and what not",
     info: "This is what we do which is painting",
-    class: "animate__animated animate__backInLeft project",
+    class: "animate__animated animate__fadeInUp project",
   },
   {
     id: 2,
@@ -15,7 +15,7 @@ const services = [
     src: crest,
     description: "Stuff",
     info: "this is what we do which is flooring",
-    class: "animate__animated animate__backInRight project",
+    class: "animate__animated animate__fadeInUp project",
   },
   {
     id: 3,
@@ -23,7 +23,7 @@ const services = [
     src: crest,
     description: "Stuff",
     info: " this is what we do which is backsplash",
-    class: "animate__animated animate__backInLeft project",
+    class: "animate__animated animate__fadeInUp project",
   },
   {
     id: 4,
@@ -31,7 +31,7 @@ const services = [
     src: crest,
     description: "Stuff",
     info: "this is what we do which is dry wall",
-    class: "animate__animated animate__backInLeft project",
+    class: "animate__animated animate__fadeInUp project",
   },
 ];
 
