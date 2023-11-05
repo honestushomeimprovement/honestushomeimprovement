@@ -3,7 +3,8 @@ import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import Carousel from "react-bootstrap/Carousel";
 
-function ModalCarousel({projectImages}) {
+function ModalCarousel({projectImages}, modalTitle) {
+  console.log(modalTitle)
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -11,7 +12,7 @@ function ModalCarousel({projectImages}) {
 
   return (
     <>
-      <Button variant="warning"  onClick={handleShow}>
+      <Button variant="warning" onClick={handleShow}>
         Click Here To See All Photos
       </Button>
 
@@ -23,22 +24,19 @@ function ModalCarousel({projectImages}) {
         size="lg"
       >
         <Modal.Header closeButton>
-          <Modal.Title>Modal title</Modal.Title>
+          <Modal.Title> </Modal.Title>
         </Modal.Header>
-        <Modal.Body>
+        <Modal.Body className="modal-background">
           {/* Carousel Start */}
           <Carousel>
             {projectImages.map((image, index) => (
-              <Carousel.Item
-              key={index}
-              >
+              <Carousel.Item key={index}>
                 <img
                   className="modal-picture"
                   src={image}
                   alt="project 1"
                 ></img>
-                <Carousel.Caption>
-                </Carousel.Caption>
+                <Carousel.Caption></Carousel.Caption>
               </Carousel.Item>
             ))}
           </Carousel>

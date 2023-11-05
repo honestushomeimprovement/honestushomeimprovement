@@ -14,7 +14,7 @@ function Services() {
   return (
     <>
       <h1 className="text-center p-3 home-head">Services</h1>
-      <div className=" d-flex align-items-center justify-content-around flex-wrap">
+      <div className=" d-flex align-items-center justify-content-around flex-wrap pb-5">
         {services.map((service) => (
           <ModalService key={service.id} service={service} />
         ))}

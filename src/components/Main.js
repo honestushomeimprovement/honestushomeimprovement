@@ -33,7 +33,7 @@ export default function Main() {
   return (
     <div className="custom-font">
       <div className="d-flex justify-content-center">
-        <img src={crest} alt="crest-logo" width="350" height="400"></img>
+        <img src={crest} alt="crest-logo" className="crest"></img>
       </div>
       <Navbar currentPage={currentPage} handlePageChange={handlePageChange} />
       <div className="main">{renderPage()}</div>

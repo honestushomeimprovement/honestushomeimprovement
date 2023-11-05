@@ -11,7 +11,7 @@ export default function Projects() {
   return (
     <>
       <h1 className="text-center p-3 home-head">Projects</h1>
-      <div className="grid-container">
+      <div className="grid-container pb-5">
         {/* New Project */}
         {projects.map((project) => (
           <div key={project.id}>
@@ -38,8 +38,11 @@ export default function Projects() {
                     </p>
                   </div>
                   {/* Modal Start */}
-                  <div className="align-self-center">
-                    <ModalCarousel projectImages={project.images} />
+                  <div className="align-self-center p-3">
+                    <ModalCarousel
+                      projectImages={project.images}
+                      modalTitle={project}
+                    />
                   </div>
                   {/* Modal End */}
                 </div>
@@ -62,14 +65,17 @@ export default function Projects() {
                       className="img-fluid "
                     ></img>
                   </div>
-                  <div className="about-content flipped-about">
+                  <div className="about-content flipped-about p-2">
                     <p className="writing-format">
                       Location: {project.location}{" "}
                     </p>
                   </div>
                   {/* Modal Start */}
                   <div className="align-self-center p-3">
-                    <ModalCarousel projectImages={project.images} />
+                    <ModalCarousel
+                      projectImages={project.images}
+                      modalTitle={project}
+                    />
                   </div>
                   {/* Modal End */}
                 </div>
