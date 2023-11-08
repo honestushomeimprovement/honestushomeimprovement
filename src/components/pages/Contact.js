@@ -1,4 +1,5 @@
-import React, { useState, useRef } from "react";
+import React, { useState, useRef, useEffect } from "react";
+import { useParams } from "react-router-dom";
 
 import { validateEmail } from "../../utils/helpers";
 
@@ -11,11 +12,22 @@ function Contact() {
     window.scrollTo(0, 500);
   }, 100);
 
+  const {paramSubject} = useParams()
+
+  console.log(paramSubject)
+
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+
+  useEffect(() => {
+      if (paramSubject) {
+        setSubject(paramSubject);
+      }
+    }, []);
+
 
   const handleInputChange = (e) => {
     const { target } = e;
@@ -34,6 +46,7 @@ function Contact() {
   };
 
   const form = useRef();
+
 
   // const sendMail = () => {
   //   const serviceID = "service_e4hx5id";
@@ -69,7 +82,7 @@ function Contact() {
       return false;
     } else {
       // sendMail();
-      console.log("yr")
+      console.log(form)
 
       setName("");
       setEmail("");
@@ -130,7 +143,7 @@ function Contact() {
         />
         <input
           className="form-control"
-          // value={email}
+          value={subject}
           name="subject"
           id="subject"
           onChange={handleInputChange}

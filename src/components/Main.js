@@ -20,15 +20,12 @@ export default function Main() {
       <Navbar />
       <div className="main">
         <Routes>
-          <Route path="/" element={<Home />}>
-          </Route>
-          <Route path="/services" element={<Services />}>
-          </Route>
-          <Route path="/projects" element={<Projects />}>
-          </Route>
-          <Route path="/reviews" element={<Reviews />}>
-          </Route>
-          <Route path="/contact" element={<Contact />}></Route>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/services" element={<Services />}></Route>
+          <Route path="/projects" element={<Projects />}></Route>
+          <Route path="/reviews" element={<Reviews />}></Route>
+          <Route exact path="/contact" element={<Contact />}></Route>
+          <Route exact path="/contact/:paramSubject" element={<Contact />}></Route>
         </Routes>
       </div>
     </div>

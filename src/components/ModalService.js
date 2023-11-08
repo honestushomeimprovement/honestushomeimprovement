@@ -1,9 +1,12 @@
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
 import pic from "../assets/images/picholder.jpg";
 
 function ModalService({service}){
+
+      const navigate = useNavigate();
       const [show1, setShow1] = useState(false);
 
       const handleClose1 = () => setShow1(false);
@@ -57,7 +60,11 @@ function ModalService({service}){
             <Button variant="light" onClick={handleClose1}>
               Close
             </Button>
-            <Button variant="warning">Contact Us</Button>
+            <Button
+              onClick={() => {
+                navigate('/contact/'+service.name)
+              }}
+             variant="warning">Contact Us</Button>
           </Modal.Footer>
         </Modal>
       </>

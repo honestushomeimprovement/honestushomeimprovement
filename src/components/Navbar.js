@@ -15,6 +15,7 @@ function CustomLink({to, children, ...props}) {
             ? "nav-link active btn btn-warning text-reset"
             : "nav-link btn btn-outline-warning custom-button text-reset"
         }
+        {...props}
       > {children}</Link>
     </li>
   );
