@@ -1,7 +1,26 @@
+import { Link, useMatch, useResolvedPath } from "react-router-dom";
 import React from "react";
 import "../styles/Navbar.css";
 
-function Navbar({ currentPage, handlePageChange }) {
+function CustomLink({to, children, ...props}) {
+  const resolvedPath = useResolvedPath(to)
+  const isActive = useMatch({ path: resolvedPath.pathname, end:true})
+
+  return (
+    <li className="nav-item mt-1">
+      <Link
+        to={to}
+        className={
+          isActive
+            ? "nav-link active btn btn-warning text-reset"
+            : "nav-link btn btn-outline-warning custom-button text-reset"
+        }
+      > {children}</Link>
+    </li>
+  );
+}
+
+function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg bg-dark fs-5 custom-underline">
       <div className="container-fluid justify-content-center">
@@ -24,71 +43,11 @@ function Navbar({ currentPage, handlePageChange }) {
           id="navbarNav"
         >
           <ul className="navbar-nav custom-nav m-3 justify-content-around">
-            <li className="nav-item mt-1">
-              <a
-                href="#home"
-                onClick={() => handlePageChange("Home")}
-                className={
-                  currentPage === "Home"
-                    ? "nav-link active btn btn-warning text-reset"
-                    : "nav-link btn btn-outline-warning custom-button text-reset"
-                }
-              >
-                Home
-              </a>
-            </li>
-            <li className="nav-item mt-1">
-              <a
-                href="#portfolio"
-                onClick={() => handlePageChange("Services")}
-                className={
-                  currentPage === "Services"
-                    ? "nav-link active btn btn-warning text-reset"
-                    : "nav-link btn btn-outline-warning custom-button text-reset"
-                }
-              >
-                Services
-              </a>
-            </li>
-            <li className="nav-item mt-1">
-              <a
-                href="#Projects"
-                onClick={() => handlePageChange("Projects")}
-                className={
-                  currentPage === "Projects"
-                    ? "nav-link active btn btn-warning text-reset"
-                    : "nav-link btn btn-outline-warning custom-button text-reset"
-                }
-              >
-                Projects
-              </a>
-            </li>
-            <li className="nav-item mt-1">
-              <a
-                href="#reviews"
-                onClick={() => handlePageChange("Reviews")}
-                className={
-                  currentPage === "Reviews"
-                    ? "nav-link active btn btn-warning text-reset"
-                    : "nav-link btn btn-outline-warning custom-button text-reset"
-                }
-              >
-                Reviews
-              </a>
-            </li>
-            <li className="nav-item mt-1">
-              <a
-                href="#contact"
-                onClick={() => handlePageChange("Contact")}
-                className={
-                  currentPage === "Contact"
-                    ? "nav-link active btn btn-warning text-reset"
-                    : "nav-link btn btn-outline-warning custom-button text-reset"
-                }
-              >
-                Contact
-              </a>
-            </li>
+            <CustomLink to="/"> Home </CustomLink>
+            <CustomLink to="/services"> Services </CustomLink>
+            <CustomLink to="/projects"> Projects </CustomLink>
+            <CustomLink to="/reviews"> Reviews </CustomLink>
+            <CustomLink to="/contact"> Contact </CustomLink>
           </ul>
         </div>
       </div>

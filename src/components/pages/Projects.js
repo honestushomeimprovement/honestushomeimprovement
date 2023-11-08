@@ -41,7 +41,6 @@ export default function Projects() {
                   <div className="align-self-center p-3">
                     <ModalCarousel
                       projectImages={project.images}
-                      modalTitle={project}
                     />
                   </div>
                   {/* Modal End */}

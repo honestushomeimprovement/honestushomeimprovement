@@ -13,6 +13,7 @@ function Contact() {
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
 
@@ -22,25 +23,12 @@ function Contact() {
     const inputValue = target.value;
 
     if (inputType === "name") {
-      if (!name) {
-        setErrorMessage(`Enter a valid name input `);
-      } else {
-        setErrorMessage("");
-      }
       setName(inputValue);
     } else if (inputType === "email") {
-      if (!validateEmail(email)) {
-        setErrorMessage("Email is invalid");
-      } else {
-        setErrorMessage("");
-      }
       setEmail(inputValue);
-    } else {
-      if (!message) {
-        setErrorMessage(`Enter a valid message input `);
-      } else {
-        setErrorMessage("");
-      }
+    } else if (inputType ==="subject") {
+      setSubject(inputValue)
+    } else if (inputType === "message") {
       setMessage(inputValue);
     }
   };
@@ -67,37 +55,38 @@ function Contact() {
   //     );
   // };
 
-  // const handleFormSubmit = (e) => {
-  //   e.preventDefault();
+  const handleFormSubmit = (e) => {
+    e.preventDefault();
 
-  //   if (!validateEmail(email)) {
-  //     setErrorMessage("Email is invalid");
-  //     return false;
-  //   } else if (!name) {
-  //     setErrorMessage(`Enter a valid name input `);
-  //     return false;
-  //   } else if (!message) {
-  //     setErrorMessage(`Enter a valid message input`);
-  //     return false;
-  //   } else {
-  //     sendMail();
+    if (!validateEmail(email)) {
+      setErrorMessage("Email is invalid");
+      return false;
+    } else if (!name) {
+      setErrorMessage(`Enter a valid name input `);
+      return false;
+    } else if (!message) {
+      setErrorMessage(`Enter a valid message input`);
+      return false;
+    } else {
+      // sendMail();
+      console.log("yr")
 
-  //     setName("");
-  //     setEmail("");
-  //     setMessage("");
-  //     setErrorMessage("");
-  //   }
-  // };
+      setName("");
+      setEmail("");
+      setMessage("");
+      setErrorMessage("");
+    }
+  };
 
   return (
     <div className="d-flex justify-content-center flex-column align-items-center pb-4 text-white">
       <h1 className="p-3 contact-head">CONTACT PAGE</h1>
       <div className="d-flex flex-column align-items-center">
-        <h3 className="d-flex">
+        <h4 className="d-flex contact-writing">
           {" "}
           Feel free to reach out to me through email:{" "}
-        </h3>
-        <h3>
+        </h4>
+        <h4 className="contact-writing">
           <a
             className="email-link"
             target="_blank"
@@ -106,9 +95,15 @@ function Contact() {
             {" "}
             Joey@example.com{" "}
           </a>{" "}
-        </h3>
-        <h3> OR Contact Through the Form Below</h3>
+        </h4>
+        <h4 className="contact-writing"> OR </h4>
+        <h4 className="contact-writing">Contact Through the Form Below</h4>
       </div>
+            {errorMessage && (
+        <div className="alert alert-warning custom-alert" role="alert">
+          <p className="error-text">{errorMessage}</p>
+        </div>
+      )}
       <form
         ref={form}
         className="d-flex flex-column custom-form animate__animated animate__backInRight"
@@ -133,6 +128,16 @@ function Contact() {
           type="email"
           placeholder="Email"
         />
+        <input
+          className="form-control"
+          // value={email}
+          name="subject"
+          id="subject"
+          onChange={handleInputChange}
+          onClick={handleInputChange}
+          type="text"
+          placeholder="Subject"
+        />
         <textarea
           className="message form-control"
           value={message}
@@ -143,18 +148,11 @@ function Contact() {
           type="text"
           placeholder="Message"
         />
-        <button
-          className="btn btn-secondary"
-          type="button"
-        >
+        <button className="btn btn-secondary" type="button" onClick={handleFormSubmit}>
           Submit
         </button>
       </form>
-      {errorMessage && (
-        <div className="alert alert-warning custom-alert" role="alert">
-          <p className="error-text">{errorMessage}</p>
-        </div>
-      )}
+
     </div>
   );
 }
