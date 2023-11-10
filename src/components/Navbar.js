@@ -23,7 +23,7 @@ function CustomLink({to, children, ...props}) {
 
 function Navbar() {
   return (
-    <nav className="navbar navbar-expand-lg bg-dark fs-5 custom-underline">
+    <nav className="navbar navbar-expand-lg fs-5 custom-underline">
       <div className="container-fluid justify-content-center">
         <div className="toggle-btn">
           <button

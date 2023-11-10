@@ -8,7 +8,7 @@ import Services from "./pages/Services";
 import Reviews from "./pages/Reviews";
 import "../styles/Main.css";
 import "animate.css";
-import crest from "../assets/images/Crest.png";
+import crest from "../assets/images/MainCrest.jpeg";
 
 export default function Main() {
 

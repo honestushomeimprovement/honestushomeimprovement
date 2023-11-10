@@ -3,6 +3,8 @@ import { useParams } from "react-router-dom";
 
 import { validateEmail } from "../../utils/helpers";
 
+import Footer from "../Footer"
+
 // import emailjs from "@emailjs/browser";
 
 import "../../styles/Contact.css";
@@ -24,7 +26,7 @@ function Contact() {
 
   useEffect(() => {
       if (paramSubject) {
-        setSubject(paramSubject);
+        setSubject( "I am interested in your "+paramSubject+" Services");
       }
     }, []);
 
@@ -165,7 +167,7 @@ function Contact() {
           Submit
         </button>
       </form>
-
+      <Footer />
     </div>
   );
 }
