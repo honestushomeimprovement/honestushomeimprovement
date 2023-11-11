@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Footer.css";
-import { BsInstagram, BsWhatsapp, BsFacebook } from "react-icons/bs";
+// import { BsInstagram, BsWhatsapp, BsFacebook } from "react-icons/bs";
 import { FaInstagram, FaFacebookSquare, FaWhatsapp } from "react-icons/fa";
 
 // We use JSX curly braces to evaluate the style object

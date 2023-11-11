@@ -88,6 +88,7 @@ function Contact() {
 
       setName("");
       setEmail("");
+      setSubject("");
       setMessage("");
       setErrorMessage("");
     }
