@@ -4,31 +4,34 @@ import { useParams } from "react-router-dom";
 import { validateEmail } from "../../utils/helpers";
 
 
-// import emailjs from "@emailjs/browser";
+import emailjs from "@emailjs/browser";
 
 import "../../styles/Contact.css";
 
 function Contact() {
+  const serviceID = "service_7ldncga";
+  const templateID = "template_xkx9md9";
+
   setTimeout(function () {
     window.scrollTo(0, 500);
   }, 100);
 
-  const {paramSubject} = useParams()
+  const { paramSubject } = useParams();
 
-  console.log(paramSubject)
+  console.log(paramSubject);
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
   const [errorMessage, setErrorMessage] = useState("");
+  const [successMessage, setSuccessMessage] = useState("");
 
   useEffect(() => {
-      if (paramSubject) {
-        setSubject( "I am interested in your "+paramSubject+" Services");
-      }
-    }, []);
-
+    if (paramSubject) {
+      setSubject("I am interested in your " + paramSubject + " Services");
+    }
+  }, []);
 
   const handleInputChange = (e) => {
     const { target } = e;
@@ -39,8 +42,8 @@ function Contact() {
       setName(inputValue);
     } else if (inputType === "email") {
       setEmail(inputValue);
-    } else if (inputType ==="subject") {
-      setSubject(inputValue)
+    } else if (inputType === "subject") {
+      setSubject(inputValue);
     } else if (inputType === "message") {
       setMessage(inputValue);
     }
@@ -48,26 +51,25 @@ function Contact() {
 
   const form = useRef();
 
+  const sendMail = () => {
 
-  // const sendMail = () => {
-  //   const serviceID = "service_e4hx5id";
-  //   const templateID = "template_h2id04w";
-
-  //   emailjs
-  //     .sendForm(serviceID, templateID, form.current, "18wXefd_i5Ikhn5wK")
-  //     .then(
-  //       (result) => {
-  //         console.log(result.text);
-  //         setName("");
-  //         setEmail("");
-  //         setMessage("");
-  //         setErrorMessage("");
-  //       },
-  //       (error) => {
-  //         console.log(error.text);
-  //       }
-  //     );
-  // };
+    emailjs
+      .sendForm(serviceID, templateID, form.current, "3bqnSGRkj7eMQCuWI")
+      .then(
+        (result) => {
+          console.log(result.text)
+          setSuccessMessage("Message Has Been Sent");
+          setName("");
+          setEmail("");
+          setSubject("");
+          setMessage("");
+          setErrorMessage("");
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+  };
 
   const handleFormSubmit = (e) => {
     e.preventDefault();
@@ -82,8 +84,8 @@ function Contact() {
       setErrorMessage(`Enter a valid message input`);
       return false;
     } else {
-      // sendMail();
-      console.log(form)
+      sendMail();
+      console.log(form);
 
       setName("");
       setEmail("");
@@ -114,9 +116,14 @@ function Contact() {
         <h4 className="contact-writing"> OR </h4>
         <h4 className="contact-writing">Contact Through the Form Below</h4>
       </div>
-            {errorMessage && (
+      {errorMessage && (
         <div className="alert alert-warning custom-alert" role="alert">
           <p className="error-text">{errorMessage}</p>
+        </div>
+      )}
+      {successMessage && (
+        <div className="alert alert-success custom-alert" role="alert">
+          <p className="error-text">{successMessage}</p>
         </div>
       )}
       <form
@@ -163,7 +170,11 @@ function Contact() {
           type="text"
           placeholder="Message"
         />
-        <button className="btn btn-secondary" type="button" onClick={handleFormSubmit}>
+        <button
+          className="btn btn-secondary"
+          type="button"
+          onClick={handleFormSubmit}
+        >
           Submit
         </button>
       </form>
