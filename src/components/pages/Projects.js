@@ -90,6 +90,7 @@ export default function Projects() {
               </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
+          <h4> Filter Selected: {filter}</h4>
         </div>
         <div className="grid-container pb-5">
           {filterProjs.map((project, index) => (
@@ -102,14 +103,23 @@ export default function Projects() {
                     id=""
                   >
                     <div className="header-content">
-                      <h3> {project.name} </h3>
+                      <h3 className="project-head"> {project.name} </h3>
                     </div>
                     <div className="picture-container p-4">
-                      <img
-                        src={project.images[0]}
-                        alt="project 1"
-                        className="img-fluid"
-                      ></img>
+                      <div>
+                        <img
+                          src={project.images[0]}
+                          alt="project 1"
+                          className="img-fluid p-2"
+                        ></img>
+                      </div>
+                      <div>
+                        <img
+                          src={project.images[0]}
+                          alt="project 1"
+                          className="img-fluid p-2"
+                        ></img>
+                      </div>
                     </div>
                     <div className="about-content p-2">
                       <p className="writing-format">
@@ -132,14 +142,23 @@ export default function Projects() {
                     id=""
                   >
                     <div className="header-content flipped-header">
-                      <h3> {project.name} </h3>
+                      <h3 className="project-head"> {project.name} </h3>
                     </div>
                     <div className="picture-container p-4">
-                      <img
-                        src={project.images[0]}
-                        alt="project 1"
-                        className="img-fluid "
-                      ></img>
+                      <div>
+                        <img
+                          src={project.images[0]}
+                          alt="project 1"
+                          className="img-fluid p-2"
+                        ></img>
+                      </div>
+                      <div>
+                        <img
+                          src={project.images[0]}
+                          alt="project 1"
+                          className="img-fluid p-2"
+                        ></img>
+                      </div>
                     </div>
                     <div className="about-content flipped-about p-2">
                       <p className="writing-format">
@@ -253,7 +272,7 @@ export default function Projects() {
                     id=""
                   >
                     <div className="header-content">
-                      <h3> {project.name} </h3>
+                      <h3 className="project-head"> {project.name} </h3>
                     </div>
                     <div className="picture-container p-4">
                       <div>
@@ -292,7 +311,7 @@ export default function Projects() {
                     id=""
                   >
                     <div className="header-content flipped-header">
-                      <h3> {project.name} </h3>
+                      <h3 className="project-head"> {project.name} </h3>
                     </div>
                     <div className="picture-container p-4">
                       <div>

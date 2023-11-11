@@ -3,7 +3,6 @@ import { useParams } from "react-router-dom";
 
 import { validateEmail } from "../../utils/helpers";
 
-import Footer from "../Footer"
 
 // import emailjs from "@emailjs/browser";
 
@@ -168,7 +167,6 @@ function Contact() {
           Submit
         </button>
       </form>
-      <Footer />
     </div>
   );
 }

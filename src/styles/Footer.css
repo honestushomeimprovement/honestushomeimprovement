@@ -10,8 +10,8 @@
 
 .instagram {
   display: inline-block;
-  width: 60px;
-  height: 60px;
+  width: 45px;
+  height: 45px;
   text-align: center;
   border-radius: 10px;
   color: #fff;
@@ -29,10 +29,10 @@
 
 .facebook {
   color: #1877f2;
-  font-size: 65px;
+  font-size: 45px;
 }
 
 .whatsapp {
   color: #25d366;
-  font-size: 65px;
+  font-size: 45px;
 }

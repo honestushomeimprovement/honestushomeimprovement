@@ -63,11 +63,10 @@ main{
 }
 
 
-h3{ /* h3 tags are for setting styles and border for all subheadings in each container */
-    font-size: 48px;
+.project-head{ /* h3 tags are for setting styles and border for all subheadings in each container */
+    font-size: 38px;
     padding: 10px;
     border-bottom: 1px solid #b1822d;
-    color: #b1822d;
 }
 
 .header-content{ /* Formats each subheader to look the same */

@@ -6,6 +6,8 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Services from "./pages/Services";
 import Reviews from "./pages/Reviews";
+import DraggableDiv from "./Draggable";
+import Footer from "../components/Footer";
 import "../styles/Main.css";
 import "animate.css";
 import crest from "../assets/images/MainCrest.jpeg";
@@ -14,6 +16,7 @@ export default function Main() {
 
   return (
     <div className="custom-font">
+      <DraggableDiv/>
       <div className="d-flex justify-content-center">
         <img src={crest} alt="crest-logo" className="crest"></img>
       </div>
@@ -25,8 +28,13 @@ export default function Main() {
           <Route path="/projects" element={<Projects />}></Route>
           <Route path="/reviews" element={<Reviews />}></Route>
           <Route exact path="/contact" element={<Contact />}></Route>
-          <Route exact path="/contact/:paramSubject" element={<Contact />}></Route>
+          <Route
+            exact
+            path="/contact/:paramSubject"
+            element={<Contact />}
+          ></Route>
         </Routes>
+        <Footer />
       </div>
     </div>
   );
