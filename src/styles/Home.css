@@ -21,14 +21,40 @@
     padding: 0px 50px;
 }
 
+.home-pic{
+    max-width: 1700px;
+    min-width: 430px;
+}
 
-@media screen and (max-width: 728px){
+.headshot{
+    flex-direction: column;
+}
+
+.gta-map{
+    max-width: 800px;
+}
+
+
+@media screen and (max-width: 950px){
     .home-container{
         flex-wrap: wrap;
     }
     .home-info{
         padding: 0px 0px;
     }
+    .headshot{
+        flex-direction: row;
+    }
+    .home-pic{
+        min-width: 0px;
+    }
+}
+
+@media screen and (max-width: 750px){
+.headshot{
+    flex-direction: column;
+}
+
 }
 
 @media screen and (max-width: 450px){

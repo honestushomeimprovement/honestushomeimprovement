@@ -7,6 +7,16 @@ import reviews from "../../assets/honestus_review_results.json";
 export default function Reviews() {
   return (
     <div className="d-flex justify-content-center flex-column align-items-center m-5">
+      <h1 className="text-center p-3 home-head">Reviews</h1>
+      <div>
+        <h2>To leave a review please click:</h2>
+      </div>
+      <a
+        className="reviewspage"
+        href="https://homestars.com/companies/2928541-piacentini-painting-services"
+      >
+        <h1>Honestus Painting & Home Improvement</h1>
+      </a>
       {reviews.map((review) => (
         <div className="complex-review-container animate__fadeIn animate__animated">
           <div className="complex-review-header">

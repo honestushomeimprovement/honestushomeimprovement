@@ -21,12 +21,22 @@
 }
 
 .complex-review-title {
-  color: #b1822d;
+  color: #ffffff;
   margin: 0;
 }
 
 .link-title {
   text-decoration: none;
+}
+
+.reviewspage{
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.reviewspage:hover{
+    transition: all ease-in-out 0.2s;
+  text-shadow: 2px 2px 8px #b1822d;
 }
 
 .complex-review-title:hover {
