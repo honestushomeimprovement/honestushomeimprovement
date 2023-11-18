@@ -30,7 +30,7 @@ export default function Reviews() {
               <img
                 src={review.image_url}
                 alt="Review"
-                className="complex-review-image"
+                className="complex-review-image img-fluid"
               />
             </a>
           )}

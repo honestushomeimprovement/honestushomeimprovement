@@ -5,11 +5,13 @@
 /* ReviewContainer.css */
 
 .complex-review-container {
+  display: flex;
+  flex-direction: column;
   border: 1px solid #b1822d;
   border-radius: 8px;
   padding: 15px;
   margin: 20px;
-  width: 800px;
+  max-width: 800px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   /* background: #FFFFFF; */
 }
@@ -82,4 +84,10 @@
 
 .complex-review-date {
   margin: 0;
+}
+
+@media screen and (min-width: 950px){
+.complex-review-container{
+    min-width: 800px;
+}
 }

@@ -34,6 +34,9 @@
     max-width: 800px;
 }
 
+.subhead{
+    color: #b1822d;
+}
 
 @media screen and (max-width: 950px){
     .home-container{
@@ -53,6 +56,9 @@
 @media screen and (max-width: 750px){
 .headshot{
     flex-direction: column;
+}
+.map-section{
+    flex-wrap: wrap;
 }
 
 }
