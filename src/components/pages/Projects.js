@@ -99,7 +99,7 @@ export default function Projects() {
                 <div>
                   <div
                     key={project.id}
-                    className="project-container standard-container animate__slideInRight animate__animated"
+                    className="project-container standard-container animate__fadeInRight animate__animated"
                     id=""
                   >
                     <div className="header-content">
@@ -138,7 +138,7 @@ export default function Projects() {
                 <div>
                   <div
                     key={project.id}
-                    className="project-container flip-container animate__slideInLeft animate__animated"
+                    className="project-container flip-container animate__fadeInLeft animate__animated"
                     id=""
                   >
                     <div className="header-content flipped-header">
@@ -268,7 +268,7 @@ export default function Projects() {
                 <div>
                   <div
                     key={project.id}
-                    className="project-container standard-container animate__slideInRight animate__animated"
+                    className="project-container standard-container animate__fadeInRight animate__animated"
                     id=""
                   >
                     <div className="header-content">
@@ -307,7 +307,7 @@ export default function Projects() {
                 <div>
                   <div
                     key={project.id}
-                    className="project-container flip-container animate__slideInLeft animate__animated"
+                    className="project-container flip-container animate__fadeInLeft animate__animated"
                     id=""
                   >
                     <div className="header-content flipped-header">

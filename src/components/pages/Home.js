@@ -7,17 +7,11 @@ export default function Home() {
       window.scrollTo(0, 500);
     }, 100);
   return (
-    <div className="home-main">
+    <div className="home-main animate__animated animate__fadeIn">
       <h1 className="text-center p-3 home-head">Honestus</h1>
       <div className="d-flex home-container">
         <div className="headshot flex-fill d-flex justify-content-center mt-3">
-          <img
-            src={pic}
-            alt="Picture1"
-            width={300}
-            height={300}
-          >
-          </img>
+          <img src={pic} alt="Picture1" width={300} height={300}></img>
         </div>
         <div className="d-flex flex-column justify-content-around ">
           <div className="home-info d-flex flex-wrap justify-content-center mt-3">

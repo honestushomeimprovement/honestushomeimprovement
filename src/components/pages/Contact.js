@@ -128,7 +128,7 @@ function Contact() {
       )}
       <form
         ref={form}
-        className="d-flex flex-column custom-form animate__animated animate__backInRight"
+        className="d-flex flex-column custom-form animate__animated animate__fadeInLeft"
       >
         <input
           className="form-control"

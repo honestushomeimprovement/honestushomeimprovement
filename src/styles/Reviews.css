@@ -1,0 +1,75 @@
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu:wght@600;700&display=swap");
+
+/* ReviewContainer.css */
+
+.complex-review-container {
+  border: 1px solid #b1822d;
+  border-radius: 8px;
+  padding: 15px;
+  margin: 20px;
+  width: 800px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  /* background: #FFFFFF; */
+}
+
+.complex-review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.complex-review-title {
+  color: #b1822d;
+  margin: 0;
+}
+
+.link-title {
+  text-decoration: none;
+}
+
+.complex-review-title:hover {
+  transition: all ease-in-out 0.2s;
+  text-shadow: 2px 2px 4px #b1822d;
+}
+
+.complex-review-rating {
+  color: #ffc107;
+  margin: 0;
+}
+
+.complex-review-image {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.complex-review-body {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #ffffff;
+}
+
+.complex-review-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  color: #777;
+}
+
+.complex-review-location {
+  color: #b1822d;
+  margin: 0;
+}
+
+.complex-review-author {
+  margin: 0;
+}
+
+.complex-review-date {
+  margin: 0;
+}
