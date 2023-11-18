@@ -110,14 +110,14 @@ export default function Projects() {
                         <img
                           src={project.images[0]}
                           alt="project 1"
-                          className="img-fluid p-2"
+                          className="img-fluid p-2 proj-pic"
                         ></img>
                       </div>
                       <div>
                         <img
-                          src={project.images[0]}
+                          src={project.images[1]}
                           alt="project 1"
-                          className="img-fluid p-2"
+                          className="img-fluid p-2 proj-pic"
                         ></img>
                       </div>
                     </div>
@@ -149,14 +149,14 @@ export default function Projects() {
                         <img
                           src={project.images[0]}
                           alt="project 1"
-                          className="img-fluid p-2"
+                          className="img-fluid p-2 proj-pic"
                         ></img>
                       </div>
                       <div>
                         <img
-                          src={project.images[0]}
+                          src={project.images[1]}
                           alt="project 1"
-                          className="img-fluid p-2"
+                          className="img-fluid p-2 proj-pic"
                         ></img>
                       </div>
                     </div>
@@ -279,14 +279,14 @@ export default function Projects() {
                         <img
                           src={project.images[0]}
                           alt="project 1"
-                          className="img-fluid p-2"
+                          className="img-fluid p-2 proj-pic"
                         ></img>
                       </div>
                       <div>
                         <img
-                          src={project.images[0]}
+                          src={project.images[1]}
                           alt="project 1"
-                          className="img-fluid p-2"
+                          className="img-fluid p-2 proj-pic"
                         ></img>
                       </div>
                     </div>
@@ -318,14 +318,14 @@ export default function Projects() {
                         <img
                           src={project.images[0]}
                           alt="project 1"
-                          className="img-fluid p-2"
+                          className="img-fluid p-2 proj-pic"
                         ></img>
                       </div>
                       <div>
                         <img
-                          src={project.images[0]}
+                          src={project.images[1]}
                           alt="project 1"
-                          className="img-fluid p-2"
+                          className="img-fluid p-2 proj-pic"
                         ></img>
                       </div>
                     </div>

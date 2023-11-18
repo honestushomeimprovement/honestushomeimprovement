@@ -20,7 +20,10 @@
   font-size: 30px;
 }
 
-
+.service-pic{
+  width: 100%;
+  max-height:400px;
+}
 
 .service-description-body{
   color: #FFFFFF;

@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
-import pic from "../assets/images/picholder.jpg";
 
 function ModalService({service}){
 
@@ -25,7 +24,7 @@ function ModalService({service}){
           </h4>
           <div className={service.class} key={service.id}>
             <div className="example">
-              <img src={pic} alt={service.name} className="img-fluid service-pic"></img>
+              <img src={service.src} alt={service.name} className="img-fluid service-pic"></img>
               <div className="content">
                 <p className="text descr">
                   Click Here For More Information About Our {service.name}{" "}

@@ -1,6 +1,7 @@
 import React from "react";
 import "../../styles/Home.css";
-import pic from "../../assets/images/picholder.jpg";
+import home1 from "../../assets/images/picsOfStaircases/2sta.JPG";
+import home2 from "../../assets/images/PicsForPotlights/0potlightOut.JPG"
 import cityMap from "../../assets/images/CityMap.png"
 
 export default function Home() {
@@ -13,10 +14,10 @@ export default function Home() {
       <div className="d-flex home-container">
         <div className="headshot flex-fill d-flex justify-content-center mt-3">
           <div className="home-pic p-2">
-            <img src={pic} alt="Picture1" className="img-fluid"></img>
+            <img src={home1} alt="Picture1" className="img-fluid"></img>
           </div>
           <div className="home-pic p-2">
-            <img src={pic} alt="Picture2" className="img-fluid"></img>
+            <img src={home2} alt="Picture2" className="img-fluid"></img>
           </div>
         </div>
         <div className="d-flex flex-column justify-content-around ">

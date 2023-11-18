@@ -20,6 +20,10 @@ main{
     "projects";
 }
 
+.proj-pic{
+
+    max-height: 600px;
+}
 
 .project-container{ /* Container for projects section */
     grid-area: projects;
