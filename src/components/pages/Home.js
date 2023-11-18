@@ -1,5 +1,6 @@
 import React from "react";
 import "../../styles/Home.css";
+import pic from "../../assets/images/picholder.jpg"
 
 export default function Home() {
     setTimeout(function () {
@@ -10,7 +11,13 @@ export default function Home() {
       <h1 className="text-center p-3 home-head">Honestus</h1>
       <div className="d-flex home-container">
         <div className="headshot flex-fill d-flex justify-content-center mt-3">
-          Reno Pic Here
+          <img
+            src={pic}
+            alt="Picture1"
+            width={300}
+            height={300}
+          >
+          </img>
         </div>
         <div className="d-flex flex-column justify-content-around ">
           <div className="home-info d-flex flex-wrap justify-content-center mt-3">
@@ -23,20 +30,6 @@ export default function Home() {
             with the release of Letraset sheets containing Lorem Ipsum passages,
             and more recently with desktop publishing software like Aldus
             PageMaker including versions of Lorem Ipsum.
-          </div>
-          <div className="d-flex justify-content-between techs mt-5">
-            <div className="mx-2">
-              <h3> We Do: </h3>
-              <ul className="">
-                <li>Painting</li>
-                <li>Tiles</li>
-                <li>Drywall</li>
-                <li>Flooring</li>
-                <li>Roofing</li>
-                <li>Ceiling</li>
-                <li>And More</li>
-              </ul>
-            </div>
           </div>
         </div>
       </div>

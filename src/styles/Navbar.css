@@ -23,9 +23,7 @@
 }
 
 .custom-underline{
-    margin-left: 30px;
-    margin-right: 30px;
-    border-bottom: 3px solid #b1822d;
+    background-color: #211D1E;
 }
 .toggle-btn{
     margin-bottom: 20px;

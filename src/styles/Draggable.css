@@ -1,10 +1,16 @@
-.box {
+.bigBox{
   position: fixed;
+  z-index: 999;
+}
+
+.box {
+  position: relative;
+  top: 50px;
   cursor: move;
   color: black;
   max-width: 215px;
   border-radius: 5px;
   padding: 5px;
-  user-select: none;
+  padding-right: 30px;
   background-color: #ffffff;
 }

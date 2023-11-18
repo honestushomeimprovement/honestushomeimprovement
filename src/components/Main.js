@@ -6,21 +6,23 @@ import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
 import Services from "./pages/Services";
 import Reviews from "./pages/Reviews";
-import DraggableDiv from "./Draggable";
 import Footer from "../components/Footer";
 import "../styles/Main.css";
 import "animate.css";
 import crest from "../assets/images/MainCrest.jpeg";
+import underbar from "../assets/images/UnderBar.jpg"
 
 export default function Main() {
 
   return (
     <div className="custom-font">
-      <DraggableDiv/>
       <div className="d-flex justify-content-center">
         <img src={crest} alt="crest-logo" className="crest"></img>
       </div>
       <Navbar />
+      <div className="d-flex justify-content-center">
+        <img src={underbar} alt="crest-logo" className="underbar"></img>
+      </div>
       <div className="main">
         <Routes>
           <Route path="/" element={<Home />}></Route>

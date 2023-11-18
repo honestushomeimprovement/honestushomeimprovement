@@ -107,10 +107,10 @@ function Contact() {
           <a
             className="email-link"
             target="_blank"
-            href="mailto:google@gmail.com"
+            href="mailto:Honestushomeimprovement@gmail.com"
           >
             {" "}
-            Joey@example.com{" "}
+            Honestushomeimprovement@gmail.com{" "}
           </a>{" "}
         </h4>
         <h4 className="contact-writing"> OR </h4>

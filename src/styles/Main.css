@@ -10,10 +10,24 @@
 .crest{
     width: 450px;
 }
+.underbar{
+    width: 100%;
+    height: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
 
 
 @media screen and (max-width: 500px) {
     .crest{
         width: 350px;
     }
+}
+
+@media screen and (max-width: 375px){
+.underbar{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
 }
