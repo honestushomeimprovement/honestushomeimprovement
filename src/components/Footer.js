@@ -18,7 +18,7 @@ function Footer() {
           <FaInstagram className="instagram" />
         </h1>
       </a>
-      <a href="https://api.whatsapp.com/send?phone=1234567890" target='_blank'>
+      <a href="https://api.whatsapp.com/send?phone=6475291390" target='_blank'>
         <h1 className="whatsapp">
           <FaWhatsapp />
         </h1>

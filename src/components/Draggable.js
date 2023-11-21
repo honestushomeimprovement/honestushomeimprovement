@@ -12,7 +12,7 @@ export default function DraggableDiv() {
         <div className="bigBox">
           <div className="box">
             <a
-              href="https://api.whatsapp.com/send?phone=1234567890"
+              href="https://api.whatsapp.com/send?phone=6475291390"
               target="_blank"
             >
               <h1 className="whatsapp">

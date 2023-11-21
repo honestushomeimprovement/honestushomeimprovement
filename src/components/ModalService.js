@@ -24,7 +24,11 @@ function ModalService({service}){
           </h4>
           <div className={service.class} key={service.id}>
             <div className="example">
-              <img src={service.src} alt={service.name} className="img-fluid service-pic"></img>
+              <img
+                src={service.src}
+                alt={service.name}
+                className="img-fluid service-pic"
+              ></img>
               <div className="content">
                 <p className="text descr">
                   Click Here For More Information About Our {service.name}{" "}
@@ -61,9 +65,20 @@ function ModalService({service}){
             </Button>
             <Button
               onClick={() => {
-                navigate('/contact/'+service.name)
+                navigate("/projects");
               }}
-             variant="warning">Contact Us</Button>
+              variant="secondary"
+            >
+              See More
+            </Button>
+            <Button
+              onClick={() => {
+                navigate("/contact/" + service.name);
+              }}
+              variant="warning"
+            >
+              Contact Us
+            </Button>
           </Modal.Footer>
         </Modal>
       </>

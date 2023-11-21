@@ -15,7 +15,7 @@ export default function Projects() {
 
     return (
       <>
-        <h1 className="text-center p-3 home-head">Projects</h1>
+        <h1 className="text-center p-3 home-head">Our Work</h1>
         <div className="p-5 d-flex">
           <h4> Filter By Category: </h4>
           <Dropdown className="mx-2">
@@ -191,7 +191,7 @@ export default function Projects() {
     //All Filter------------------------------------------------------------------------------------------------------------------------
     return (
       <>
-        <h1 className="text-center p-3 home-head">Projects</h1>
+        <h1 className="text-center p-3 home-head">Our Work</h1>
         <div className="p-5 d-flex">
           <h4> Filter By Category: </h4>
           <Dropdown className="mx-2">
