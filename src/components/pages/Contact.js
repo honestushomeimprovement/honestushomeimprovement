@@ -98,7 +98,7 @@ function Contact() {
   return (
     <div className="d-flex justify-content-center flex-column align-items-center pb-4 text-white">
       <h1 className="p-3 contact-head">Contact</h1>
-      <div className="d-flex flex-column align-items-center">
+      <div className="d-flex flex-column align-items-center contact-writing">
         <h4 className="d-flex contact-writing">
           {" "}
           Feel free to reach out to me through email:{" "}

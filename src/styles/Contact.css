@@ -55,10 +55,16 @@
     .custom-form{
         width: 300px;
     }
+    .contact-writing{
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 400px){
     .custom-form{
         width: 200px;
+    }
+    .contact-writing{
+        font-size: 18px;
     }
 }

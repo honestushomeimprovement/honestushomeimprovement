@@ -10,7 +10,7 @@ export default function Home() {
   }, 100);
   return (
     <div className="home-main animate__animated animate__fadeIn">
-      <h1 className="text-center p-3 home-head">Honestus</h1>
+      <h1 className="text-center p-3 home-head">HONESTUS</h1>
       <div className="d-flex home-container">
         <div className="headshot flex-fill d-flex justify-content-center mt-3">
           <div className="home-pic p-2">

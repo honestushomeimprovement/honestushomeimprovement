@@ -46,7 +46,7 @@ function Navbar() {
           <ul className="navbar-nav custom-nav m-3 justify-content-around">
             <CustomLink to="/"> Home </CustomLink>
             <CustomLink to="/services"> Services </CustomLink>
-            <CustomLink to="/projects"> Projects </CustomLink>
+            <CustomLink to="/projects"> Our Work </CustomLink>
             <CustomLink to="/reviews"> Reviews </CustomLink>
             <CustomLink to="/contact"> Contact </CustomLink>
           </ul>

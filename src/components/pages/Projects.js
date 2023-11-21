@@ -4,7 +4,6 @@ import projects from "../../assets/ProjectsInfo";
 import ModalCarousel from "../ModalCarousel";
 import Dropdown from "react-bootstrap/Dropdown";
 import "../../styles/Projects.css";
-import pic from "../../assets/images/picholder.jpg";
 
 export default function Projects() {
   const [filter, setFilter] = useState("");
@@ -41,7 +40,7 @@ export default function Projects() {
               </Dropdown.Item>
               <Dropdown.Item
                 onClick={() => {
-                  setFilter("");
+                  setFilter("Potlights");
                 }}
               >
                 Pot Lights
@@ -55,7 +54,7 @@ export default function Projects() {
               </Dropdown.Item>
               <Dropdown.Item
                 onClick={() => {
-                  setFilter("");
+                  setFilter("Kitchens");
                 }}
               >
                 Kitchens
@@ -69,21 +68,28 @@ export default function Projects() {
               </Dropdown.Item>
               <Dropdown.Item
                 onClick={() => {
-                  setFilter("");
+                  setFilter("EpoxyFlooring");
                 }}
               >
                 Epoxy Flooring
               </Dropdown.Item>
               <Dropdown.Item
                 onClick={() => {
-                  setFilter("");
+                  setFilter("Wainscoting");
                 }}
               >
                 Wainscoting
               </Dropdown.Item>
               <Dropdown.Item
                 onClick={() => {
-                  setFilter("");
+                  setFilter("Staircases");
+                }}
+              >
+                Staircases
+              </Dropdown.Item>
+              <Dropdown.Item
+                onClick={() => {
+                  setFilter("GeneralContracting");
                 }}
               >
                 General Contracting
@@ -210,7 +216,7 @@ export default function Projects() {
               </Dropdown.Item>
               <Dropdown.Item
                 onClick={() => {
-                  setFilter("");
+                  setFilter("Potlights");
                 }}
               >
                 Pot Lights
@@ -224,7 +230,7 @@ export default function Projects() {
               </Dropdown.Item>
               <Dropdown.Item
                 onClick={() => {
-                  setFilter("");
+                  setFilter("Kitchens");
                 }}
               >
                 Kitchens
@@ -238,21 +244,28 @@ export default function Projects() {
               </Dropdown.Item>
               <Dropdown.Item
                 onClick={() => {
-                  setFilter("");
+                  setFilter("EpoxyFlooring");
                 }}
               >
                 Epoxy Flooring
               </Dropdown.Item>
               <Dropdown.Item
                 onClick={() => {
-                  setFilter("");
+                  setFilter("Wainscoting");
                 }}
               >
                 Wainscoting
               </Dropdown.Item>
               <Dropdown.Item
                 onClick={() => {
-                  setFilter("");
+                  setFilter("Staircases");
+                }}
+              >
+                Staircases
+              </Dropdown.Item>
+              <Dropdown.Item
+                onClick={() => {
+                  setFilter("GeneralContracting");
                 }}
               >
                 General Contracting
