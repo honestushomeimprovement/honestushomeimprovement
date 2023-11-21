@@ -25,7 +25,7 @@ export default function Main() {
       </div>
       <div className="main">
         <Routes>
-          <Route path="/" element={<Home />}></Route>
+          <Route path="/reno-site" element={<Home />}></Route>
           <Route path="/services" element={<Services />}></Route>
           <Route path="/projects" element={<Projects />}></Route>
           <Route path="/reviews" element={<Reviews />}></Route>
