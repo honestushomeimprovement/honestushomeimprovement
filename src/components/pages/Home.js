@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styles/Home.css";
-import home1 from "../../assets/images/picsOfStaircases/2sta.JPG";
+import home1 from "../../assets/images/picsForPainting/9Paint.jpeg";
 import home2 from "../../assets/images/PicsForPotlights/0potlightOut.JPG"
 import cityMap from "../../assets/images/CityMap.png"
 
