@@ -25,6 +25,7 @@
 .complex-review-title {
   color: #ffffff;
   margin: 0;
+    padding: 5px;
 }
 
 .link-title {
@@ -49,6 +50,7 @@
 .complex-review-rating {
   color: #ffc107;
   margin: 0;
+  padding: 5px;
 }
 
 .complex-review-image {
@@ -63,6 +65,7 @@
   margin-top: 10px;
   font-size: 18px;
   color: #ffffff;
+  
 }
 
 .complex-review-footer {
@@ -76,14 +79,17 @@
 .complex-review-location {
   color: #b1822d;
   margin: 0;
+    padding: 5px;
 }
 
 .complex-review-author {
   margin: 0;
+    padding: 5px;
 }
 
 .complex-review-date {
   margin: 0;
+    padding: 5px;
 }
 
 @media screen and (min-width: 950px){

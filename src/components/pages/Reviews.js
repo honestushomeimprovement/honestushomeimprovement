@@ -6,7 +6,7 @@ import reviews from "../../assets/honestus_review_results.json";
 
 export default function Reviews() {
   return (
-    <div className="d-flex justify-content-center flex-column align-items-center m-5">
+    <div className="d-flex justify-content-center flex-column align-items-center p-5">
       <h1 className="text-center p-3 home-head">Reviews</h1>
       <div>
         <h2>To leave a review please click:</h2>
