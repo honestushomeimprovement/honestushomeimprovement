@@ -12,10 +12,6 @@ function Contact() {
   const serviceID = "service_7ldncga";
   const templateID = "template_xkx9md9";
 
-  setTimeout(function () {
-    window.scrollTo(0, 500);
-  }, 100);
-
   const { paramSubject } = useParams();
 
   console.log(paramSubject);
