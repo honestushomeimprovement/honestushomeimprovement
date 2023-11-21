@@ -1,73 +1,78 @@
-.home-container{
-    margin: 30px;
+.home-container {
+  margin: 30px;
 }
 
-.home-head{
-    text-shadow: 0px 0px 4px #b1822d;
-    font-size: 50px;
+.home-head {
+  text-shadow: 0px 0px 4px #b1822d;
+  font-size: 50px;
 }
 
-.home-main{
-    color: white;
-    padding-bottom: 30px;
+.home-main {
+  color: white;
+  padding-bottom: 30px;
 }
 
-.home-info{
-    padding: 0px 50px;
-    font-size: 16px;
+.home-info {
+  padding: 0px 50px;
+  font-size: 16px;
 }
 
-.techs{
-    padding: 0px 50px;
+.techs {
+  padding: 0px 50px;
 }
 
-.home-pic{
-    max-width: 1700px;
-    min-width: 430px;
+.home-pic {
+  max-width: 1700px;
+  min-width: 430px;
 }
 
-
-.headshot{
-    flex-direction: column;
+.headshot {
+  flex-direction: column;
 }
 
-.gta-map{
-    max-width: 800px;
+.gta-map {
+  max-width: 800px;
 }
 
-.subhead{
-    color: #b1822d;
+.subhead {
+  color: #b1822d;
 }
 
-@media screen and (max-width: 950px){
-    .home-container{
-        flex-wrap: wrap;
-    }
-    .home-info{
-        padding: 0px 0px;
-    }
-    .headshot{
-        flex-direction: row;
-    }
-    .home-pic{
-        min-width: 0px;
-    }
-}
-
-@media screen and (max-width: 750px){
-.headshot{
-    flex-direction: column;
-}
-.map-section{
+@media screen and (max-width: 950px) {
+  .home-container {
     flex-wrap: wrap;
+  }
+  .home-info {
+    padding: 0px 0px;
+  }
+  .headshot {
+    flex-direction: row;
+  }
+  .home-pic {
+    min-width: 0px;
+  }
 }
 
+@media screen and (max-width: 750px) {
+  .headshot {
+    flex-direction: column;
+  }
+  .map-section {
+    flex-wrap: wrap;
+  }
+  .custom-homepic {
+    width: 100%;
+    max-height: 600px;
+  }
 }
 
-@media screen and (max-width: 450px){
-    .techs{
-        flex-wrap: wrap;
-        padding: 0px 5px;
-    }
-
+@media screen and (max-width: 450px) {
+  .techs {
+    flex-wrap: wrap;
+    padding: 0px 5px;
+  }
+  .custom-homepic {
+    width: 100%;
+    max-height: 400px;
+  }
 }

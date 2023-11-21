@@ -26,6 +26,7 @@ import extpainting10 from "../assets/images/picsForExteriorPainting/9ExtPaint.JP
 
 import kitchen1 from "../assets/images/picsforKitchen/Kitchen1.jpeg";
 import kitchen2 from "../assets/images/picsforKitchen/Kitchen2.jpeg";
+import kitchen3 from "../assets/images/picsforKitchen/IMG_0799.jpeg";
 
 
 import floor1 from "../assets/images/PicsForFlooring/1flooring.JPG";
@@ -80,6 +81,9 @@ import wainscoting3 from "../assets/images/picsOfWainscoting/2Wainscoting.JPG";
 import wainscoting4 from "../assets/images/picsOfWainscoting/3Wainscoting.JPG";
 import wainscoting5 from "../assets/images/picsOfWainscoting/4Wainscoting.JPG";
 import wainscoting6 from "../assets/images/picsOfWainscoting/5Wainscoting.JPG";
+import wainscoting7 from "../assets/images/picsOfWainscoting/wainscoting6.JPG";
+import wainscoting8 from "../assets/images/picsOfWainscoting/wainscoting7.JPG";
+import wainscoting9 from "../assets/images/picsOfWainscoting/wainscoting8.JPG";
 
 import stairs1 from "../assets/images/picsOfStaircases/0sta.JPG";
 import stairs2 from "../assets/images/picsOfStaircases/1sta.JPG";
@@ -226,6 +230,9 @@ const projects = [
       wainscoting4,
       wainscoting5,
       wainscoting6,
+      wainscoting7,
+      wainscoting8,
+      wainscoting9,
     ],
   },
   {
@@ -234,7 +241,7 @@ const projects = [
     category: ["Kitchens"],
     location: "GTA",
     description: "lroen ipsum delta bravo",
-    images: [kitchen1, kitchen2],
+    images: [kitchen1, kitchen2, kitchen3],
   },
   {
     id: 8,

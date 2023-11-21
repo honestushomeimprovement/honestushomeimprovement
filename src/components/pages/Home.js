@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styles/Home.css";
-import home1 from "../../assets/images/picsForPainting/9Paint.jpeg";
+import home1 from "../../assets/images/homepic1.jpeg";
 import home2 from "../../assets/images/PicsForPotlights/0potlightOut.JPG"
 import cityMap from "../../assets/images/CityMap.png"
 
@@ -12,9 +12,13 @@ export default function Home() {
     <div className="home-main animate__animated animate__fadeIn">
       <h1 className="text-center p-3 home-head">HONESTUS</h1>
       <div className="d-flex home-container">
-        <div className="headshot flex-fill d-flex justify-content-center mt-3">
+        <div className="headshot d-flex justify-content-center mt-3">
           <div className="home-pic p-2">
-            <img src={home1} alt="Picture1" className="img-fluid"></img>
+            <img
+              src={home1}
+              alt="Picture1"
+              className="img-fluid custom-homepic "
+            ></img>
           </div>
           <div className="home-pic p-2">
             <img src={home2} alt="Picture2" className="img-fluid"></img>
