@@ -1,4 +1,4 @@
-import pictureholder from "./images/picholder.jpg"
+// import pictureholder from "./images/picholder.jpg"
 
 import painting1 from "../assets/images/picsForPainting/1Paint.jpeg"
 import painting2 from "../assets/images/picsForPainting/2Paint.jpeg";
@@ -22,6 +22,7 @@ import extpainting6 from "../assets/images/picsForExteriorPainting/5ExtPaint.jpg
 import extpainting7 from "../assets/images/picsForExteriorPainting/6ExtPaint.jpeg";
 import extpainting8 from "../assets/images/picsForExteriorPainting/7ExtPaint.jpeg";
 import extpainting9 from "../assets/images/picsForExteriorPainting/8ExtPaint.jpeg";
+import extpainting10 from "../assets/images/picsForExteriorPainting/9ExtPaint.JPG";
 
 import kitchen1 from "../assets/images/picsforKitchen/Kitchen1.jpeg";
 import kitchen2 from "../assets/images/picsforKitchen/Kitchen2.jpeg";
@@ -37,6 +38,13 @@ import floor7 from "../assets/images/PicsForFlooring/7flooring.JPG";
 import floor8 from "../assets/images/PicsForFlooring/8flooring.JPG";
 import floor9 from "../assets/images/PicsForFlooring/9flooring.JPG";
 import floor10 from "../assets/images/PicsForFlooring/0flooring.JPG";
+import floor11 from "../assets/images/PicsForFlooring/flooring14.JPG";
+import floor12 from "../assets/images/PicsForFlooring/flooring15.JPG";
+import floor13 from "../assets/images/PicsForFlooring/flooring16.JPG";
+import floor14 from "../assets/images/PicsForFlooring/flooring17.JPG";
+import floor15 from "../assets/images/PicsForFlooring/flooring18.JPG";
+import floor16 from "../assets/images/PicsForFlooring/flooring10.JPG";
+
 
 import bathroom1 from "../assets/images/picsOfBathrooms/1Baths.JPG";
 import bathroom2 from "../assets/images/picsOfBathrooms/2Baths.JPG";
@@ -76,6 +84,23 @@ import wainscoting6 from "../assets/images/picsOfWainscoting/5Wainscoting.JPG";
 import stairs1 from "../assets/images/picsOfStaircases/0sta.JPG";
 import stairs2 from "../assets/images/picsOfStaircases/1sta.JPG";
 import stairs3 from "../assets/images/picsOfStaircases/2sta.JPG";
+import stairs4 from "../assets/images/picsOfStaircases/staircase3.JPG";
+import stairs5 from "../assets/images/picsOfStaircases/staircase4.JPG";
+import stairs6 from "../assets/images/picsOfStaircases/staircase5.JPG";
+import stairs7 from "../assets/images/picsOfStaircases/staircase6.JPG";
+import stairs8 from "../assets/images/picsOfStaircases/staircase7.JPG";
+import stairs9 from "../assets/images/picsOfStaircases/staircase8.JPG";
+import stairs10 from "../assets/images/picsOfStaircases/staircase9.JPG";
+import stairs11 from "../assets/images/picsOfStaircases/staircase10.JPG";
+import stairs12 from "../assets/images/picsOfStaircases/staircase11.JPG";
+import stairs13 from "../assets/images/picsOfStaircases/staircase12.JPG";
+import stairs14 from "../assets/images/picsOfStaircases/staircase13.JPG";
+
+import epoxy1 from "../assets/images/picsForEpoxyFloors/epoxyFloor1.JPG";
+import epoxy2 from "../assets/images/picsForEpoxyFloors/epoxyFloor2.JPG";
+import epoxy3 from "../assets/images/picsForEpoxyFloors/epoxyFloor3.JPG";
+import epoxy4 from "../assets/images/picsForEpoxyFloors/epoxyFloor4.JPG";
+import epoxy5 from "../assets/images/picsForEpoxyFloors/epoxyFloor5.JPG";
 
 const projects = [
   {
@@ -115,6 +140,7 @@ const projects = [
       extpainting7,
       extpainting8,
       extpainting9,
+      extpainting10,
     ],
   },
   {
@@ -171,6 +197,12 @@ const projects = [
       floor8,
       floor9,
       floor10,
+      floor11,
+      floor12,
+      floor13,
+      floor14,
+      floor15,
+      floor16,
     ],
   },
   {
@@ -202,7 +234,7 @@ const projects = [
     category: ["Kitchens"],
     location: "GTA",
     description: "lroen ipsum delta bravo",
-    images: [kitchen1,kitchen2],
+    images: [kitchen1, kitchen2],
   },
   {
     id: 8,
@@ -210,7 +242,30 @@ const projects = [
     category: ["Staircases"],
     location: "GTA",
     description: "lroen ipsum delta bravo",
-    images: [stairs1, stairs2, stairs3],
+    images: [
+      stairs1,
+      stairs2,
+      stairs3,
+      stairs4,
+      stairs5,
+      stairs6,
+      stairs7,
+      stairs8,
+      stairs9,
+      stairs10,
+      stairs11,
+      stairs12,
+      stairs13,
+      stairs14,
+    ],
+  },
+  {
+    id: 9,
+    name: "Epoxy Floors",
+    category: ["EpoxyFlooring"],
+    location: "GTA",
+    description: "lroen ipsum delta bravo",
+    images: [epoxy1, epoxy2, epoxy3, epoxy4, epoxy5],
   },
 ];
 

@@ -1,10 +1,11 @@
 import paintMain from "../assets/images/picsForPainting/10Paint.jpeg";
 import floorMain from "../assets/images/PicsForFlooring/1flooring.JPG"
 import bathroomMain from "../assets/images/picsOfBathrooms/0Baths.JPG";
-import potlightMain from "../assets/images/picsForIntPotlights/0potlightIn.JPG"
-import wainscotingMain from "../assets/images/picsOfWainscoting/0Wainscoting.JPG"
-import stairsMain from "../assets/images/picsOfStaircases/0sta.JPG"
-import kitchenMain from "../assets/images/picsforKitchen/Kitchen1.jpeg"
+import potlightMain from "../assets/images/picsForIntPotlights/0potlightIn.JPG";
+import wainscotingMain from "../assets/images/picsOfWainscoting/0Wainscoting.JPG";
+import stairsMain from "../assets/images/picsOfStaircases/0sta.JPG";
+import kitchenMain from "../assets/images/picsforKitchen/Kitchen1.jpeg";
+import epoxyFlooringMain from "../assets/images/picsForEpoxyFloors/epoxyFloor4.JPG";
 
 const services = [
   {
@@ -60,6 +61,14 @@ const services = [
     name: "Kitchens",
     src: kitchenMain,
     description: "Kitchens",
+    info: "Click the Contact Us button to find out more details on our Kitchen work!",
+    class: "animate__animated animate__fadeInUp project",
+  },
+  {
+    id: 8,
+    name: "Epoxy Flooring",
+    src: epoxyFlooringMain,
+    description: "EpoxyFlooring",
     info: "Click the Contact Us button to find out more details on our Kitchen work!",
     class: "animate__animated animate__fadeInUp project",
   },

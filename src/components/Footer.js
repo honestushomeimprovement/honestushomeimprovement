@@ -8,7 +8,7 @@ import { FaInstagram, FaFacebookSquare, FaWhatsapp } from "react-icons/fa";
 function Footer() {
   return (
     <div className="d-flex align-items-center justify-content-center footer">
-      <a href="https://google.com">
+      {/* <a href="https://google.com">
         <h1 className="facebook">
           <FaFacebookSquare />
         </h1>
@@ -17,7 +17,7 @@ function Footer() {
         <h1 className="insta-container">
           <FaInstagram className="instagram" />
         </h1>
-      </a>
+      </a> */}
       <a href="https://api.whatsapp.com/send?phone=16475291390" target='_blank'>
         <h1 className="whatsapp">
           <FaWhatsapp />

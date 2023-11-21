@@ -17,8 +17,9 @@ export default function Reviews() {
       >
         <h1>Honestus Painting & Home Improvement</h1>
       </a>
-      {reviews.map((review) => (
-        <div className="complex-review-container animate__fadeIn animate__animated">
+      {reviews.map((review, index) => (
+        <div key={index} 
+        className="complex-review-container animate__fadeIn animate__animated">
           <div className="complex-review-header">
             <a className="link-title" href={review.url}>
               <h2 className="complex-review-title">{review.title}</h2>

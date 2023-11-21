@@ -4,7 +4,7 @@ import Modal from "react-bootstrap/Modal";
 import Carousel from "react-bootstrap/Carousel";
 
 function ModalCarousel({projectImages}, modalTitle) {
-  console.log(modalTitle)
+  // console.log(modalTitle)
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);

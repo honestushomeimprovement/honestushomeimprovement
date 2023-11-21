@@ -9,7 +9,6 @@ function Services() {
     window.scrollTo(0, 500);
   }, 100);
 
-  console.log(services);
 
   return (
     <>

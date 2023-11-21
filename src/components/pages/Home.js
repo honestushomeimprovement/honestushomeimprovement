@@ -64,7 +64,9 @@ export default function Home() {
       <div className="d-flex justify-content-between p-4 map-section">
         <div className="d-flex justify-content-between techs mt-5">
           <div className="mx-2">
-            <h3 className="subhead">We Offer Our Services All Over the GTA! </h3>
+            <h3 className="subhead">
+              We Offer Our Services All Over the GTA!{" "}
+            </h3>
             <ul className="">
               <li>Painting</li>
               <li>Pot Lights</li>
