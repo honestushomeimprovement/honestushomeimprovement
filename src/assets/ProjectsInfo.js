@@ -1,4 +1,5 @@
 // import pictureholder from "./images/picholder.jpg"
+//fefegggegeg
 
 import painting1 from "../assets/images/picsForPainting/1Paint.jpeg"
 import painting2 from "../assets/images/picsForPainting/2Paint.jpeg";
