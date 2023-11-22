@@ -2,7 +2,6 @@
   "name": "reno-site",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://keysbhag.github.io/reno-site/",
   "dependencies": {
     "@emailjs/browser": "^3.10.0",
     "@testing-library/jest-dom": "^5.16.4",
