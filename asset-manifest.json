@@ -1,9 +1,14 @@
 {
   "files": {
-    "main.css": "/reno-site/static/css/main.4f5685ce.css",
-    "main.js": "/reno-site/static/js/main.598bbcc1.js",
+    "main.css": "/reno-site/static/css/main.52823be4.css",
+    "main.js": "/reno-site/static/js/main.43c3f70e.js",
     "static/media/epoxyFloor5.JPG": "/reno-site/static/media/epoxyFloor5.f5da1a397226a9097b71.JPG",
+    "static/media/IMG_8184.jpeg": "/reno-site/static/media/IMG_8184.0efc92e66e6ca6c2eda7.jpeg",
     "static/media/epoxyFloor4.JPG": "/reno-site/static/media/epoxyFloor4.3af1f21033bc0b9b3a24.JPG",
+    "static/media/IMG_8183.jpeg": "/reno-site/static/media/IMG_8183.aeb4593b6703e091a3fc.jpeg",
+    "static/media/IMG_8177.jpeg": "/reno-site/static/media/IMG_8177.548dc85816bef3b23530.jpeg",
+    "static/media/IMG_8170.jpeg": "/reno-site/static/media/IMG_8170.cebf52b4e20291757cde.jpeg",
+    "static/media/IMG_8172.jpeg": "/reno-site/static/media/IMG_8172.49936786a6f9da5cf8c7.jpeg",
     "static/media/7potlightOut.JPG": "/reno-site/static/media/7potlightOut.0df9220e29b2a515201c.JPG",
     "static/media/8potlightOut.JPG": "/reno-site/static/media/8potlightOut.02412cb476baeb4ff416.JPG",
     "static/media/6ExtPaint.jpeg": "/reno-site/static/media/6ExtPaint.178d8ddae9dc2c4c49f8.jpeg",
@@ -17,6 +22,7 @@
     "static/media/4Baths.JPG": "/reno-site/static/media/4Baths.7968967757f66f1f1d42.JPG",
     "static/media/2flooring.JPG": "/reno-site/static/media/2flooring.eee3e2f39f1d3a5121e1.JPG",
     "static/media/4Paint.JPG": "/reno-site/static/media/4Paint.8e5bf4a46ea567d6f819.JPG",
+    "static/media/IMG_8182.jpeg": "/reno-site/static/media/IMG_8182.25458004b5d91044155b.jpeg",
     "static/media/7ExtPaint.jpeg": "/reno-site/static/media/7ExtPaint.c571e863f686f769b9d4.jpeg",
     "static/media/8ExtPaint.jpeg": "/reno-site/static/media/8ExtPaint.c571e863f686f769b9d4.jpeg",
     "static/media/3flooring.JPG": "/reno-site/static/media/3flooring.567c841fe42b3e0a6da6.JPG",
@@ -96,16 +102,16 @@
     "static/media/9Paint.jpeg": "/reno-site/static/media/9Paint.25529a6ce3b106af83f7.jpeg",
     "static/media/1Paint.jpeg": "/reno-site/static/media/1Paint.586e065afc955f1480f3.jpeg",
     "static/media/3Paint.jpeg": "/reno-site/static/media/3Paint.4dc73abd30665ce104a7.jpeg",
-    "static/media/MainCrest.jpeg": "/reno-site/static/media/MainCrest.889d1b19ddcfd04cb4b8.jpeg",
     "static/media/8Paint.jpeg": "/reno-site/static/media/8Paint.327aac30dc74efbed55a.jpeg",
+    "static/media/MainCrest.jpeg": "/reno-site/static/media/MainCrest.b732213ce34a046cb0f2.jpeg",
     "static/media/2Paint.jpeg": "/reno-site/static/media/2Paint.c9dd12252265771b8b5d.jpeg",
     "static/media/UnderBar.jpg": "/reno-site/static/media/UnderBar.dfa2d7ea8813a5d0a126.jpg",
     "index.html": "/reno-site/index.html",
-    "main.4f5685ce.css.map": "/reno-site/static/css/main.4f5685ce.css.map",
-    "main.598bbcc1.js.map": "/reno-site/static/js/main.598bbcc1.js.map"
+    "main.52823be4.css.map": "/reno-site/static/css/main.52823be4.css.map",
+    "main.43c3f70e.js.map": "/reno-site/static/js/main.43c3f70e.js.map"
   },
   "entrypoints": [
-    "static/css/main.4f5685ce.css",
-    "static/js/main.598bbcc1.js"
+    "static/css/main.52823be4.css",
+    "static/js/main.43c3f70e.js"
   ]
 }
