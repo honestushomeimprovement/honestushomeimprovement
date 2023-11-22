@@ -16,7 +16,7 @@ export default function Projects() {
     return (
       <>
         <h1 className="text-center p-3 home-head">Our Work</h1>
-        <div className="p-5 d-flex">
+        <div className="p-5 d-flex flex-wrap">
           <h4> Filter By Category: </h4>
           <Dropdown className="mx-2">
             <Dropdown.Toggle variant="warning" id="dropdown-basic">
@@ -86,13 +86,6 @@ export default function Projects() {
                 }}
               >
                 Staircases
-              </Dropdown.Item>
-              <Dropdown.Item
-                onClick={() => {
-                  setFilter("GeneralContracting");
-                }}
-              >
-                General Contracting
               </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>
@@ -262,13 +255,6 @@ export default function Projects() {
                 }}
               >
                 Staircases
-              </Dropdown.Item>
-              <Dropdown.Item
-                onClick={() => {
-                  setFilter("GeneralContracting");
-                }}
-              >
-                General Contracting
               </Dropdown.Item>
             </Dropdown.Menu>
           </Dropdown>

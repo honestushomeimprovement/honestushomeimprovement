@@ -79,7 +79,6 @@ export default function Home() {
               <li>Bathrooms</li>
               <li>Epoxy Flooring</li>
               <li>Wainscoting</li>
-              <li>General Contracting</li>
             </ul>
           </div>
         </div>

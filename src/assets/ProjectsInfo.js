@@ -12,6 +12,12 @@ import painting9 from "../assets/images/picsForPainting/4Paint.JPG";
 import painting10 from "../assets/images/picsForPainting/5Paint.JPG";
 import painting11 from "../assets/images/picsForPainting/6Paint.JPG";
 import painting12 from "../assets/images/picsForPainting/7Paint.JPG";
+import painting13 from "../assets/images/picsForPainting/IMG_8170.jpeg";
+import painting14 from "../assets/images/picsForPainting/IMG_8172.jpeg";
+import painting15 from "../assets/images/picsForPainting/IMG_8177.jpeg";
+import painting16 from "../assets/images/picsForPainting/IMG_8182.jpeg";
+import painting17 from "../assets/images/picsForPainting/IMG_8183.jpeg";
+import painting18 from "../assets/images/picsForPainting/IMG_8184.jpeg";
 
 import extpainting1 from "../assets/images/picsForExteriorPainting/0ExtPaint.JPG";
 import extpainting2 from "../assets/images/picsForExteriorPainting/1ExtPaint.JPG";
@@ -126,6 +132,12 @@ const projects = [
       painting10,
       painting11,
       painting12,
+      painting13,
+      painting14,
+      painting15,
+      painting16,
+      painting17,
+      painting18,
     ],
   },
   {

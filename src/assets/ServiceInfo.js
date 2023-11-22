@@ -69,7 +69,7 @@ const services = [
     name: "Epoxy Flooring",
     src: epoxyFlooringMain,
     description: "EpoxyFlooring",
-    info: "Click the Contact Us button to find out more details on our Kitchen work!",
+    info: "Click the Contact Us button to find out more details on our Epoxy work!",
     class: "animate__animated animate__fadeInUp project",
   },
 ];
