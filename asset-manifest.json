@@ -1,11 +1,12 @@
 {
   "files": {
-    "main.css": "/static/css/main.52823be4.css",
-    "main.js": "/static/js/main.87e29c5c.js",
+    "main.css": "/static/css/main.4a6472f4.css",
+    "main.js": "/static/js/main.9f5fc44b.js",
     "static/media/epoxyFloor5.JPG": "/static/media/epoxyFloor5.f5da1a397226a9097b71.JPG",
     "static/media/IMG_8184.jpeg": "/static/media/IMG_8184.0efc92e66e6ca6c2eda7.jpeg",
     "static/media/epoxyFloor4.JPG": "/static/media/epoxyFloor4.3af1f21033bc0b9b3a24.JPG",
     "static/media/IMG_8183.jpeg": "/static/media/IMG_8183.aeb4593b6703e091a3fc.jpeg",
+    "static/media/homepic1.jpeg": "/static/media/homepic1.0ebf576cfb3a4b1b135b.jpeg",
     "static/media/IMG_8177.jpeg": "/static/media/IMG_8177.548dc85816bef3b23530.jpeg",
     "static/media/IMG_8170.jpeg": "/static/media/IMG_8170.cebf52b4e20291757cde.jpeg",
     "static/media/IMG_8172.jpeg": "/static/media/IMG_8172.49936786a6f9da5cf8c7.jpeg",
@@ -73,7 +74,6 @@
     "static/media/staircase12.JPG": "/static/media/staircase12.213a78c3e86249dc1f9a.JPG",
     "static/media/epoxyFloor3.JPG": "/static/media/epoxyFloor3.0a653a7778604d550e16.JPG",
     "static/media/staircase9.JPG": "/static/media/staircase9.d42ccbfd1c9dc9769505.JPG",
-    "static/media/homepic1.jpeg": "/static/media/homepic1.eb92b435cb60839f9a1e.jpeg",
     "static/media/6Paint.JPG": "/static/media/6Paint.69e4d9e0f598e978ea53.JPG",
     "static/media/4Wainscoting.JPG": "/static/media/4Wainscoting.1ee4b79a8b4633b825d9.JPG",
     "static/media/flooring14.JPG": "/static/media/flooring14.b05b9f0ffdd00d655fca.JPG",
@@ -107,11 +107,11 @@
     "static/media/2Paint.jpeg": "/static/media/2Paint.c9dd12252265771b8b5d.jpeg",
     "static/media/UnderBar.jpg": "/static/media/UnderBar.dfa2d7ea8813a5d0a126.jpg",
     "index.html": "/index.html",
-    "main.52823be4.css.map": "/static/css/main.52823be4.css.map",
-    "main.87e29c5c.js.map": "/static/js/main.87e29c5c.js.map"
+    "main.4a6472f4.css.map": "/static/css/main.4a6472f4.css.map",
+    "main.9f5fc44b.js.map": "/static/js/main.9f5fc44b.js.map"
   },
   "entrypoints": [
-    "static/css/main.52823be4.css",
-    "static/js/main.87e29c5c.js"
+    "static/css/main.4a6472f4.css",
+    "static/js/main.9f5fc44b.js"
   ]
 }
