@@ -16,7 +16,7 @@ export default function Main() {
 
   return (
     <div className="custom-font">
-      <div className="d-flex justify-content-center">
+      <div className="d-flex justify-content-center image-bg">
         <img src={crest} alt="crest-logo" className="crest"></img>
       </div>
       <Navbar />

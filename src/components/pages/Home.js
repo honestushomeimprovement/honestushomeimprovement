@@ -13,11 +13,11 @@ export default function Home() {
       <h1 className="text-center p-3 home-head">HONESTUS</h1>
       <div className="d-flex home-container">
         <div className="headshot d-flex justify-content-center mt-3">
-          <div className="home-pic p-2">
+          <div className="customhome-box p-2">
             <img
               src={home1}
               alt="Picture1"
-              className="img-fluid custom-homepic "
+              className="img-fluid custom-homepic"
             ></img>
           </div>
           <div className="home-pic p-2">

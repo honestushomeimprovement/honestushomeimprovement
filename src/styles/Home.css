@@ -1,5 +1,6 @@
 .home-container {
   margin: 30px;
+  flex-direction: column;
 }
 
 .home-head {
@@ -22,12 +23,20 @@
 }
 
 .home-pic {
-  max-width: 1700px;
+  max-width: 900px;
   min-width: 430px;
 }
 
+.custom-homepic{
+  max-width: 500px;
+  
+}
+
+.customhome-box{
+    max-width: 500px;
+}
 .headshot {
-  flex-direction: column;
+
 }
 
 .gta-map {
@@ -52,6 +61,7 @@
     min-width: 0px;
   }
 }
+
 
 @media screen and (max-width: 750px) {
   .headshot {

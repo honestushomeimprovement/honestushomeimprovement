@@ -8,7 +8,7 @@
  color: #FFFFFF;   
 }
 .crest{
-    width: 550px;
+    max-width: 550px;
     padding-bottom: 30px;
 }
 .underbar{
@@ -16,6 +16,10 @@
     height: 10px;
     padding-left: 15px;
     padding-right: 15px;
+    background-color: #211D1E;
+}
+.image-bg{
+    background-color: #211D1E;
 }
 
 
