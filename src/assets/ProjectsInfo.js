@@ -19,6 +19,17 @@ import painting15 from "../assets/images/picsForPainting/IMG_8177.jpeg";
 import painting16 from "../assets/images/picsForPainting/IMG_8182.jpeg";
 import painting17 from "../assets/images/picsForPainting/IMG_8183.jpeg";
 import painting18 from "../assets/images/picsForPainting/IMG_8184.jpeg";
+import painting19 from "../assets/images/picsForPainting/Paint14.jpg";
+import painting20 from "../assets/images/picsForPainting/Paint15.jpeg";
+import painting21 from "../assets/images/picsForPainting/Paint16.jpeg";
+import painting22 from "../assets/images/picsForPainting/Paint17.jpeg";
+import painting23 from "../assets/images/picsForPainting/Paint18.jpeg";
+import painting24 from "../assets/images/picsForPainting/Paint19.jpeg";
+import painting25 from "../assets/images/picsForPainting/Paint20.jpeg";
+import painting26 from "../assets/images/picsForPainting/Paint21.jpeg";
+import painting27 from "../assets/images/picsForPainting/Paint22.jpeg";
+import painting28 from "../assets/images/picsForPainting/Paint23.jpeg";
+
 
 import extpainting1 from "../assets/images/picsForExteriorPainting/0ExtPaint.JPG";
 import extpainting2 from "../assets/images/picsForExteriorPainting/1ExtPaint.JPG";
@@ -52,6 +63,10 @@ import floor13 from "../assets/images/PicsForFlooring/flooring16.JPG";
 import floor14 from "../assets/images/PicsForFlooring/flooring17.JPG";
 import floor15 from "../assets/images/PicsForFlooring/flooring18.JPG";
 import floor16 from "../assets/images/PicsForFlooring/flooring10.JPG";
+import floor17 from "../assets/images/PicsForFlooring/Floor19.jpg";
+import floor18 from "../assets/images/PicsForFlooring/Floor20.jpeg";
+import floor19 from "../assets/images/PicsForFlooring/Floor21.jpeg";
+import floor20 from "../assets/images/PicsForFlooring/Floor22.jpeg";
 
 
 import bathroom1 from "../assets/images/picsOfBathrooms/1Baths.JPG";
@@ -121,6 +136,15 @@ const projects = [
     location: "GTA",
     description: "lroen ipsum delta bravo",
     images: [
+      painting28,
+      painting27,
+      painting26,
+      painting25,
+      painting23,
+      painting22,
+      painting21,
+      painting20,
+      painting19,
       painting1,
       painting2,
       painting3,
@@ -204,6 +228,10 @@ const projects = [
     location: "GTA",
     description: "lroen ipsum delta bravo",
     images: [
+      floor20,
+      floor19,
+      floor18,
+      floor17,
       floor1,
       floor2,
       floor3,
