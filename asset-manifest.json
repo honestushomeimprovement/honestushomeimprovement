@@ -1,12 +1,24 @@
 {
   "files": {
     "main.css": "/static/css/main.4a6472f4.css",
-    "main.js": "/static/js/main.9f5fc44b.js",
+    "main.js": "/static/js/main.0b68e748.js",
+    "static/media/Floor20.jpeg": "/static/media/Floor20.5bb214b9c5bd04019398.jpeg",
+    "static/media/Paint15.jpeg": "/static/media/Paint15.3e72dd463d27c4d55ccf.jpeg",
+    "static/media/Paint22.jpeg": "/static/media/Paint22.6493a8bfb7b884db72de.jpeg",
+    "static/media/Paint18.jpeg": "/static/media/Paint18.4a0b2ed28efd55e5e8ed.jpeg",
+    "static/media/Paint16.jpeg": "/static/media/Paint16.b0bb30bc4a84553d2fd7.jpeg",
+    "static/media/Paint19.jpeg": "/static/media/Paint19.cca9150ea528d08fc9e9.jpeg",
+    "static/media/Paint20.jpeg": "/static/media/Paint20.cca9150ea528d08fc9e9.jpeg",
     "static/media/epoxyFloor5.JPG": "/static/media/epoxyFloor5.f5da1a397226a9097b71.JPG",
+    "static/media/Paint21.jpeg": "/static/media/Paint21.ee4648576534b8b14a21.jpeg",
     "static/media/IMG_8184.jpeg": "/static/media/IMG_8184.0efc92e66e6ca6c2eda7.jpeg",
+    "static/media/Paint17.jpeg": "/static/media/Paint17.3d656d763c3872ee1406.jpeg",
+    "static/media/Paint23.jpeg": "/static/media/Paint23.5b9fab8639117bb08247.jpeg",
     "static/media/epoxyFloor4.JPG": "/static/media/epoxyFloor4.3af1f21033bc0b9b3a24.JPG",
     "static/media/IMG_8183.jpeg": "/static/media/IMG_8183.aeb4593b6703e091a3fc.jpeg",
     "static/media/homepic1.jpeg": "/static/media/homepic1.0ebf576cfb3a4b1b135b.jpeg",
+    "static/media/Floor22.jpeg": "/static/media/Floor22.d0f19bb532abbf4efad4.jpeg",
+    "static/media/Floor21.jpeg": "/static/media/Floor21.485284c9b625b247b904.jpeg",
     "static/media/IMG_8177.jpeg": "/static/media/IMG_8177.548dc85816bef3b23530.jpeg",
     "static/media/IMG_8170.jpeg": "/static/media/IMG_8170.cebf52b4e20291757cde.jpeg",
     "static/media/IMG_8172.jpeg": "/static/media/IMG_8172.49936786a6f9da5cf8c7.jpeg",
@@ -96,6 +108,8 @@
     "static/media/Kitchen1.jpeg": "/static/media/Kitchen1.7b20efa8959cadd5aa00.jpeg",
     "static/media/flooring16.JPG": "/static/media/flooring16.5ac9b48e6458611cb5d6.JPG",
     "static/media/staircase13.JPG": "/static/media/staircase13.dd0f76cccdc0138ce1ce.JPG",
+    "static/media/Floor19.jpg": "/static/media/Floor19.558b4944979d6c7524dd.jpg",
+    "static/media/Paint14.jpg": "/static/media/Paint14.558b4944979d6c7524dd.jpg",
     "static/media/wainscoting8.JPG": "/static/media/wainscoting8.392224b41a8c53e8fbd2.JPG",
     "static/media/IMG_0799.jpeg": "/static/media/IMG_0799.546b55feb192ac9d96a8.jpeg",
     "static/media/Kitchen2.jpeg": "/static/media/Kitchen2.ca2355cd5ac2b03bf084.jpeg",
@@ -108,10 +122,10 @@
     "static/media/UnderBar.jpg": "/static/media/UnderBar.dfa2d7ea8813a5d0a126.jpg",
     "index.html": "/index.html",
     "main.4a6472f4.css.map": "/static/css/main.4a6472f4.css.map",
-    "main.9f5fc44b.js.map": "/static/js/main.9f5fc44b.js.map"
+    "main.0b68e748.js.map": "/static/js/main.0b68e748.js.map"
   },
   "entrypoints": [
     "static/css/main.4a6472f4.css",
-    "static/js/main.9f5fc44b.js"
+    "static/js/main.0b68e748.js"
   ]
 }
